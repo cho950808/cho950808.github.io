@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: [
     "./pages/*.js",
@@ -19,6 +21,7 @@ module.exports = {
       none: "none",
     },
     colors: {
+      ...colors,
       transparent: "transparent",
       black: {
         500: "#4F5665",
