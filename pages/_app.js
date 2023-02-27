@@ -1,8 +1,13 @@
-import "../styles/tailwind.css";
-import "../styles/slick.css";
+import Navbar from '../components/Navbar';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
