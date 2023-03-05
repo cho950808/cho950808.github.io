@@ -114,7 +114,7 @@ const AboutMe = () => {
                 />
               </div>
               <div>
-                <p>JUNIOR FRONTEND DEVELOPER</p>
+                <p>FRONTEND DEVELOPER</p>
                 <p className="py-4">
                   I am available for full-time positions. Contact me and let the
                   magic happen !

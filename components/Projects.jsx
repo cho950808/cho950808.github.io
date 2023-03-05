@@ -1,66 +1,44 @@
-import React from 'react';
-import mymoviz from '../public/assets/projects/mymoviz.jpeg'
-import newsImg from '../public/assets/projects/morningnews.jpeg';
-import myPicsImg from '../public/assets/projects/myPics.jpg';
-import shifoumiImg from '../public/assets/projects/rockpapercisors.jpeg';
-import locapicImg from '../public/assets/projects/locapic.jpeg';
-import wannaplayImg from '../public/assets/projects/wannaplay.jpeg';
-import eshopImg from '../public/assets/projects/eshop.jpeg'
-import ProjectsItem from './ProjectsItem';
+import Link from "next/link";
+import React from "react";
+import project from "../tmp/project";
 
 const Projects = () => {
   return (
-    <div id='projects' className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#6fa2c7]">
-          Projects
-        </p>
-        <h2 className="py-4">What I've Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <ProjectsItem
-            title="My Moviz"
-            backgroundImg={mymoviz}
-            projectUrl="/mymoviz"
-            framework="Next js"
-          />
-          <ProjectsItem
-            title="E-Shop"
-            backgroundImg={eshopImg}
-            projectUrl="/eshop"
-            framework="Next js"
-          />
-          <ProjectsItem
-            title="Morning News"
-            backgroundImg={newsImg}
-            projectUrl="/morningnews"
-            framework="Next js"
-          />
-          <ProjectsItem
-            title="My Pics"
-            backgroundImg={myPicsImg}
-            projectUrl="/mypics"
-            framework="Next js"
-          />
-            <ProjectsItem
-              title="Wannaplay"
-              backgroundImg={wannaplayImg}
-              projectUrl="/wannaplay"
-              framework="react native"
-            />
-          <ProjectsItem
-            title="Shi-Fou-Mi"
-            backgroundImg={shifoumiImg}
-            projectUrl="/shifoumi"
-            framework="react native"
-          />
-          <ProjectsItem
-            title="Locapic"
-            backgroundImg={locapicImg}
-            projectUrl="/locapic"
-            framework="react native"
-          />
-        </div>
-      </div>
+    <div
+      id="projects"
+      className="w-full p-2 flex items-center py-16 grid grid-cols-1"
+    >
+      {project.map((item, index) => {
+        return (
+          <div
+            className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 my-20"
+            key={`project_${index}`}
+          >
+            <div className="col-span-2">
+              {index === 0 && (
+                <p className="uppercase text-xl tracking-widest text-[#6fa2c7]">
+                  Projects
+                </p>
+              )}
+              <h2 className="py-4">{item.project_name}</h2>
+              <p className="text-gray-500">{item.project_period} </p>
+              <p className="py-2 text-gray-600">{item.project_desc}</p>
+              <Link href="/#projects">
+                <p className="py-2 text-gray-600 underline cursor-pointer">
+                  Checkout my last projects !
+                </p>
+              </Link>
+            </div>
+            <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-150">
+              <img
+                className="rounded-xl"
+                src="https://source.unsplash.com/vXInUOv1n84"
+                alt="/"
+              />
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
