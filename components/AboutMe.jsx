@@ -97,65 +97,31 @@ const AboutMe = () => {
   };
 
   return (
-    <div id="aboutMe" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
+    <div id="aboutMe" className="w-full mt-20">
+      <div className="max-w-[1240px] m-auto w-full">
         <p className="text-xl tracking-widest uppercase text-[#6fa2c7]">
           About Me
         </p>
         <h2 className="py-4">Profile</h2>
-        <div className="grid lg:grid-cols-5 gap-8">
+        <div className="grid lg:grid-cols-6 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
-            <div className="lg:p-4 h-full">
-              <div className="rounded-xl hover:scale-105 ease-in duration-150">
+            <div className="lg:p-4 h-full w-full flex flex-col items-center justify-center">
+              <div
+                className={`flex items-center justify-center w-[250px] h-[250px] xs:w-[220px] xs:h-[220px] rounded-full overflow-hidden bg-secondary`}
+              >
                 <img
-                  className="rounded-xl"
-                  src="https://source.unsplash.com/-0xCCPIbl3M"
-                  alt="/"
+                  src={"../assets/projects/profile.jpeg"}
+                  className="w-full h-full object-cover"
                 />
               </div>
+
               <div>
-                <p>FRONTEND DEVELOPER</p>
-                <p className="py-4">
-                  I am available for full-time positions. Contact me and let the
-                  magic happen !
-                </p>
-              </div>
-              <div>
-                <div className="flex items-center justify-between py-1">
-                  <a
-                    href="https://www.linkedin.com/in/gw%C3%A9na%C3%ABl-gu%C3%A9rin-0636901a7/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-150">
-                      <AiFillLinkedin />
-                    </div>
-                  </a>
-                  <a
-                    href="https://github.com/gwen-guerin"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-150">
-                      <AiFillGithub />
-                    </div>
-                  </a>
-                  <a href="mailto:gwenael.guerin@protonmail.com">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-150">
-                      <AiOutlineMail />
-                    </div>
-                  </a>
-                  <a onClick={handleResume} href="/#myResume" target="_blank">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-150">
-                      <BsFillPersonLinesFill />
-                    </div>
-                  </a>
-                </div>
+                <p className="text-bold py-4">1년 차, 프론트엔드 개발자</p>
               </div>
             </div>
           </div>
 
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className="col-span-4 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
@@ -209,7 +175,7 @@ const AboutMe = () => {
                     <span className="text-bold text-[18px]">학력</span>
                   </h1>
                   <span className="text-gray-500 text-[15px]">
-                    강릉원주대학교 (멀티미디어공학과)
+                    강릉원주대학교 (멀티미디어공학부)
                   </span>
                 </div>
               </div>
