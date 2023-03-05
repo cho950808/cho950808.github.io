@@ -8,10 +8,15 @@ import {
   AiOutlinePhone,
 } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { ImProfile } from "react-icons/im";
+import { MdOutlineSchool } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import {
+  IoCalendarClearOutline,
+  IoLocationOutline,
+  IoSchoolOutline,
+} from "react-icons/io5";
 
-const Contact = () => {
+const AboutMe = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [mail, setMail] = useState("");
@@ -92,7 +97,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full lg:h-screen">
+    <div id="aboutMe" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#6fa2c7]">
           About Me
@@ -116,8 +121,7 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect with me !</p>
-                <div className="flex items-center justify-between py-4">
+                <div className="flex items-center justify-between py-1">
                   <a
                     href="https://www.linkedin.com/in/gw%C3%A9na%C3%ABl-gu%C3%A9rin-0636901a7/"
                     target="_blank"
@@ -157,48 +161,56 @@ const Contact = () => {
                 <div className="flex flex-col">
                   <h1 className="uppercase text-sm py-2 flex items-center">
                     <CgProfile className="w-[30px] h-[30px] mr-2" />
-                    <span>이름</span>
+                    <span className="text-bold text-[18px]">이름</span>
                   </h1>
-                  <span>조재영</span>
+                  <span className="text-gray-500 text-[15px]">조재영</span>
                 </div>
                 <div className="flex flex-col">
                   <h1 className="uppercase text-sm py-2 flex items-center">
                     <AiOutlinePhone className="w-[30px] h-[30px] mr-2" />
-                    <span>전화번호</span>
+                    <span className="text-bold text-[18px]">전화번호</span>
                   </h1>
-                  <span>010 - 4073 - 2899</span>
+                  <span className="text-gray-500 text-[15px]">
+                    010 - 4073 - 2899
+                  </span>
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-4 w-full py-2 mt-5">
                 <div className="flex flex-col">
                   <h1 className="uppercase text-sm py-2 flex items-center">
-                    <CgProfile className="w-[30px] h-[30px] mr-2" />
-                    <span>생년월일</span>
+                    <IoCalendarClearOutline className="w-[30px] h-[30px] mr-2" />
+                    <span className="text-bold text-[18px]">생년월일</span>
                   </h1>
-                  <span>1995.08.08</span>
+                  <span className="text-gray-500 text-[15px]">1995.08.08</span>
                 </div>
                 <div className="flex flex-col">
                   <h1 className="uppercase text-sm py-2 flex items-center">
-                    <AiOutlinePhone className="w-[30px] h-[30px] mr-2" />
-                    <span>이메일</span>
+                    <AiOutlineMail className="w-[30px] h-[30px] mr-2" />
+                    <span className="text-bold text-[18px]">이메일</span>
                   </h1>
-                  <span>tjsthrl1111@gmail.com</span>
+                  <span className="text-gray-500 text-[15px]">
+                    tjsthrl1111@gmail.com
+                  </span>
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-4 w-full py-2 mt-5">
                 <div className="flex flex-col">
                   <h1 className="uppercase text-sm py-2 flex items-center">
-                    <CgProfile className="w-[30px] h-[30px] mr-2" />
-                    <span>주소지</span>
+                    <IoLocationOutline className="w-[30px] h-[30px] mr-2" />
+                    <span className="text-bold text-[18px]">주소지</span>
                   </h1>
-                  <span>서울시 구로구</span>
+                  <span className="text-gray-500 text-[15px]">
+                    서울시 구로구
+                  </span>
                 </div>
                 <div className="flex flex-col">
                   <h1 className="uppercase text-sm py-2 flex items-center">
-                    <AiOutlinePhone className="w-[30px] h-[30px] mr-2" />
-                    <span>학력</span>
+                    <IoSchoolOutline className="w-[30px] h-[30px] mr-2" />
+                    <span className="text-bold text-[18px]">학력</span>
                   </h1>
-                  <span>강릉원주대학교 (멀티미디어공학과)</span>
+                  <span className="text-gray-500 text-[15px]">
+                    강릉원주대학교 (멀티미디어공학과)
+                  </span>
                 </div>
               </div>
             </div>
@@ -209,4 +221,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default AboutMe;

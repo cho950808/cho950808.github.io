@@ -2,7 +2,7 @@ import Head from "next/head";
 import Main from "../components/Main";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
-import Contact from "../components/Contact";
+import AboutMe from "../components/AboutMe";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/public/assets/mylogo.png" />
       </Head>
       <Main />
-      <Contact />
+      <AboutMe />
       <Skills />
     </div>
   );
