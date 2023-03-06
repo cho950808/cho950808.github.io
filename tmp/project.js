@@ -5,6 +5,7 @@ import StarLightThum from "../public/assets/projects/starlight_thum.jpg";
 
 const project_data = [
   {
+    id: 1,
     project_route: "icom",
     project_name: "Icom",
     project_period: "2023. 3 ~ 현재",
@@ -12,6 +13,7 @@ const project_data = [
     project_image: [],
   },
   {
+    id: 2,
     project_route: "starLight",
     project_name: "StarLight",
     project_period: "2022. 12 ~ 2023. 2",
@@ -20,6 +22,7 @@ const project_data = [
     project_image: [],
   },
   {
+    id: 3,
     project_route: "creta",
     project_name: "Creta",
     project_period: "2022. 4 ~ 2022. 11",
@@ -28,6 +31,7 @@ const project_data = [
     project_image: [],
   },
   {
+    id: 4,
     project_route: "newSsem",
     project_name: "new SSEM",
     project_period: "2021. 11 ~ 2022. 3",
@@ -36,6 +40,7 @@ const project_data = [
     project_image: [],
   },
   {
+    id: 5,
     project_route: "perfumeShop",
     project_name: "Perfume Shop",
     project_period: "2021. 6 ~ 2021. 8",

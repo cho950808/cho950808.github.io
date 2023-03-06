@@ -21,10 +21,12 @@ const Projects = () => {
                   Projects
                 </p>
               )}
-              <h2 className="py-4">{item.project_name}</h2>
+              <h2 className="py-1">{item.project_name}</h2>
               <p className="text-gray-500">{item.project_period} </p>
-              <p className="py-2 text-gray-600">{item.project_desc}</p>
-              <Link href="/#projects">
+              <div className="mt-5 flex items-center">
+                <p className="text-gray-600">&nbsp;{item.project_desc}</p>
+              </div>
+              <Link href={`/project/${item.project_route}`}>
                 <p className="py-2 text-gray-600 underline cursor-pointer">
                   Checkout my last projects !
                 </p>
