@@ -1,17 +1,18 @@
 import Link from "next/link";
 import React from "react";
 import project from "../tmp/project";
+import Image from "next/image";
 
 const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full p-2 flex items-center py-16 grid grid-cols-1"
+      className="max-w-[1240px] m-auto p-2 flex items-center py-16 grid grid-cols-1"
     >
       {project.map((item, index) => {
         return (
           <div
-            className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 my-20"
+            className="w-full m-auto md:grid grid-cols-3 gap-8 my-20"
             key={`project_${index}`}
           >
             <div className="col-span-2">
@@ -29,10 +30,12 @@ const Projects = () => {
                 </p>
               </Link>
             </div>
-            <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-150">
-              <img
+            <div className="col-span-1 w-full m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center overflow-hidden">
+              <Image
                 className="rounded-xl"
-                src="https://source.unsplash.com/vXInUOv1n84"
+                src={item.project_thum}
+                width="100%"
+                height="100%"
                 alt="/"
               />
             </div>

@@ -1,37 +1,46 @@
+import PerfumeThum from "../public/assets/projects/perfume_thum.jpg";
+import NewSsemThum from "../public/assets/projects/new_ssem_thum.png";
+import Creta_Thum from "../public/assets/projects/creta_thum.jpg";
+import StarLightThum from "../public/assets/projects/starlight_thum.jpg";
+
 const project_data = [
   {
     project_route: "icom",
     project_name: "Icom",
-    project_period: "2023. 2. 27 ~",
+    project_period: "2023. 3 ~ 현재",
     project_desc: "icomicom",
     project_image: [],
   },
   {
     project_route: "starLight",
     project_name: "StarLight",
-    project_period: "2022. 12. 5 ~ 2023. 2. 24",
+    project_period: "2022. 12 ~ 2023. 2",
     project_desc: "starlight",
+    project_thum: StarLightThum,
     project_image: [],
   },
   {
     project_route: "creta",
     project_name: "Creta",
-    project_period: "2022. 4. 1 ~ 2022. 11. 1",
+    project_period: "2022. 4 ~ 2022. 11",
     project_desc: "creta",
+    project_thum: Creta_Thum,
     project_image: [],
   },
   {
     project_route: "newSsem",
     project_name: "new SSEM",
-    project_period: "2021. 11. 8 ~ 2022. 2. 28",
+    project_period: "2021. 11 ~ 2022. 3",
     project_desc: "new ssem",
+    project_thum: NewSsemThum,
     project_image: [],
   },
   {
     project_route: "perfumeShop",
     project_name: "Perfume Shop",
-    project_period: "2021. 6. 21 ~ 2021. 7. 28",
+    project_period: "2021. 6 ~ 2021. 8",
     project_desc: "perfume shop",
+    project_thum: PerfumeThum,
     project_image: [],
   },
 ];
