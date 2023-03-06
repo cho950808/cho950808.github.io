@@ -124,9 +124,6 @@ const project_data = [
       {
         tech: "Jquery",
       },
-      {
-        tech: "Mysql",
-      },
     ],
   },
   {

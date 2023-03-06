@@ -14,26 +14,9 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [navBg, setNavBg] = useState("#ecf0f1");
   const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
-
-  useEffect(() => {
-    if (
-      router.asPath === "/mymoviz" ||
-      router.asPath === "/morningnews" ||
-      router.asPath === "/myPics" ||
-      router.asPath === "/wannaplay" ||
-      router.asPath === "/shifoumi" ||
-      router.asPath === "/locapic"
-    ) {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
-    } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
-    }
-  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -41,10 +24,14 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY >= 700) {
         setShadow(true);
+        setNavBg("#ecf0f1");
+        setLinkColor("#1f2937");
       } else {
         setShadow(false);
+        setNavBg("transparent");
+        setLinkColor("#ecf0f1");
       }
     };
     window.addEventListener("scroll", handleShadow);
