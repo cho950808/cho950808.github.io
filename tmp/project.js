@@ -4,14 +4,36 @@ import Creta_Thum from "../public/assets/projects/creta_thum.jpg";
 import StarLightThum from "../public/assets/projects/starlight_thum.jpg";
 
 const project_data = [
-  // {
-  //   id: 1,
-  //   project_route: "icom",
-  //   project_name: "Icom",
-  //   project_period: "2023. 3 ~ 현재",
-  //   project_desc: "icomicom",
-  //   project_image: [],
-  // },
+  {
+    id: 1,
+    project_route: "icom",
+    project_name: "Icom",
+    project_period: "2023. 3 ~ 현재",
+    project_desc: "icomicom",
+    project_image: [],
+    project_info: [
+      {
+        info: "React Native로 Android, IOS 동시 개발 진행",
+      },
+    ],
+    project_tech: [
+      {
+        tech: "React Native",
+      },
+      {
+        tech: "Styled-components",
+      },
+      {
+        tech: "Javascript",
+      },
+      {
+        tech: "Typescript",
+      },
+      {
+        tech: "Recoil",
+      },
+    ],
+  },
   {
     id: 2,
     project_route: "starLight",
