@@ -45,4 +45,7 @@ Table.defaultProps = {
   borderlessRow: false,
 }
 
+// 컴포넌트에 displayName 설정
+Table.displayName = 'Table'
+
 export default Table
