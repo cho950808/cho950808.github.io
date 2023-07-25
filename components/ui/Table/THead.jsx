@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import PropTypes from 'prop-types'
 
 const THead = React.forwardRef((props, ref) => {
   const { children, asElement: Component, className, ...rest } = props
@@ -12,6 +13,14 @@ const THead = React.forwardRef((props, ref) => {
     </Component>
   )
 })
+
+THead.propTypes = {
+  asElement: PropTypes.string,
+}
+
+THead.defaultProps = {
+  asElement: 'thead',
+}
 
 THead.displayName = 'THead'
 
