@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
-import { AiFillGithub, AiFillLinkedin, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
-import { MdOutlineSchool } from 'react-icons/md'
+import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 import { CgProfile } from 'react-icons/cg'
 import { IoCalendarClearOutline, IoLocationOutline, IoSchoolOutline } from 'react-icons/io5'
+import { prefix } from '../config'
 
 const AboutMe = () => {
   const [name, setName] = useState('')
@@ -98,11 +97,11 @@ const AboutMe = () => {
               <div
                 className={`flex items-center justify-center w-[250px] h-[250px] xs:w-[220px] xs:h-[220px] rounded-full overflow-hidden bg-secondary`}
               >
-                <img src={'../assets/projects/profile.jpeg'} className="w-full h-full object-cover" />
+                <img src={`${prefix}/assets/projects/profile.jpeg`} className="w-full h-full object-cover" />
               </div>
 
               <div>
-                <p className="text-bold py-4">1년 차, 프론트엔드 개발자</p>
+                <p className="text-bold py-4">2년 차, 프론트엔드 개발자</p>
               </div>
             </div>
           </div>

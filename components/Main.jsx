@@ -1,5 +1,6 @@
 import React from 'react'
 // import { useRouter } from 'next/router';
+import { prefix } from '../config'
 
 export default function Main() {
   return (
@@ -7,7 +8,7 @@ export default function Main() {
       id="main"
       className="w-full h-screen text-center bg-cover bg-center"
       style={{
-        backgroundImage: `url('../assets/projects/banner.jpeg')`,
+        backgroundImage: `url('${prefix}/assets/projects/banner.jpeg')`,
       }}
     >
       <div className="z-1 absolute w-full h-full top-0 left-0 bg-gradient-to-t from-black/80 to-black/5" />

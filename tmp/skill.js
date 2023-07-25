@@ -1,45 +1,38 @@
-import Html from "../public/assets/skills/html.png";
-import Css from "../public/assets/skills/css.png";
-import Js from "../public/assets/skills/javascript.png";
-import ReactLogo from "../public/assets/skills/react.png";
-import Tailwind from "../public/assets/skills/tailwind.png";
-import reduxLogo from "../public/assets/skills/redux.png";
-import NextLogo from "../public/assets/skills/nextjs.png";
-import ReactNative from "../public/assets/skills/react-native.png";
+import { prefix } from '../config'
 
 const skill_data = [
   {
-    framework: "javascript",
-    skill_image: Js,
+    framework: 'javascript',
+    skill_image: `${prefix}/assets/skills/javascript.png`,
   },
   {
-    framework: "react js",
-    skill_image: ReactLogo,
+    framework: 'react js',
+    skill_image: `${prefix}/assets/skills/react.png`,
   },
   {
-    framework: "react-native",
-    skill_image: ReactLogo,
+    framework: 'react-native',
+    skill_image: `${prefix}/assets/skills/react.png`,
   },
   {
-    framework: "next js",
-    skill_image: NextLogo,
+    framework: 'next js',
+    skill_image: `${prefix}/assets/skills/nextjs.png`,
   },
   {
-    framework: "redux",
-    skill_image: reduxLogo,
+    framework: 'redux',
+    skill_image: `${prefix}/assets/skills/redux.png`,
   },
   {
-    framework: "tailwind",
-    skill_image: Tailwind,
+    framework: 'tailwind',
+    skill_image: `${prefix}/assets/skills/tailwind.png`,
   },
   {
-    framework: "html",
-    skill_image: Html,
+    framework: 'html',
+    skill_image: `${prefix}/assets/skills/html.png`,
   },
   {
-    framework: "css",
-    skill_image: Css,
+    framework: 'css',
+    skill_image: `${prefix}/assets/skills/css.png`,
   },
-];
+]
 
-export default skill_data;
+export default skill_data

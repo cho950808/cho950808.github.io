@@ -6,6 +6,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
   assetPrefix: isProd ? '/next-js-portfolio' : '',
 }
 

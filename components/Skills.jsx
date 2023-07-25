@@ -2,7 +2,6 @@
 import React from 'react'
 import SkillsItem from './SkillsItem'
 import skill_data from '../tmp/skill'
-// import { prefix } from '../../config'
 
 export default function Skills() {
   return (
