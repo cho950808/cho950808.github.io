@@ -2,11 +2,13 @@
   "name": "next-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cho950808.github.io/next-js-portfolio",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
