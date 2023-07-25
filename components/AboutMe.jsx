@@ -90,7 +90,7 @@ const AboutMe = () => {
     <div id="aboutMe" className="w-full mt-20">
       <div className="max-w-[1240px] m-auto w-full">
         <p className="text-xl tracking-widest uppercase text-[#6fa2c7]">About Me</p>
-        <h2 className="py-4">Profile</h2>
+        <h2 className="py-4 text-3xl sm:text-4xl">Profile</h2>
         <div className="grid lg:grid-cols-6 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full w-full flex flex-col items-center justify-center">
@@ -110,14 +110,14 @@ const AboutMe = () => {
             <div className="p-4">
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
-                  <h1 className="uppercase text-sm py-2 flex items-center">
+                  <h1 className="uppercase text-sm py-2 flex items-center text-4xl sm:text-5xl md:text-6xl">
                     <CgProfile className="w-[30px] h-[30px] mr-2" />
                     <span className="text-bold text-[18px]">이름</span>
                   </h1>
                   <span className="text-gray-500 text-[15px]">조재영</span>
                 </div>
                 <div className="flex flex-col">
-                  <h1 className="uppercase text-sm py-2 flex items-center">
+                  <h1 className="uppercase text-sm py-2 flex items-center text-4xl sm:text-5xl md:text-6xl">
                     <AiOutlinePhone className="w-[30px] h-[30px] mr-2" />
                     <span className="text-bold text-[18px]">전화번호</span>
                   </h1>
@@ -126,7 +126,7 @@ const AboutMe = () => {
               </div>
               <div className="grid md:grid-cols-2 gap-4 w-full py-2 mt-5">
                 <div className="flex flex-col">
-                  <h1 className="uppercase text-sm py-2 flex items-center">
+                  <h1 className="uppercase text-sm py-2 flex items-center text-4xl sm:text-5xl md:text-6xl">
                     <IoCalendarClearOutline className="w-[30px] h-[30px] mr-2" />
                     <span className="text-bold text-[18px]">생년월일</span>
                   </h1>
@@ -142,14 +142,14 @@ const AboutMe = () => {
               </div>
               <div className="grid md:grid-cols-2 gap-4 w-full py-2 mt-5">
                 <div className="flex flex-col">
-                  <h1 className="uppercase text-sm py-2 flex items-center">
+                  <h1 className="uppercase text-sm py-2 flex items-center text-4xl sm:text-5xl md:text-6xl">
                     <IoLocationOutline className="w-[30px] h-[30px] mr-2" />
                     <span className="text-bold text-[18px]">주소지</span>
                   </h1>
                   <span className="text-gray-500 text-[15px]">서울시 구로구</span>
                 </div>
                 <div className="flex flex-col">
-                  <h1 className="uppercase text-sm py-2 flex items-center">
+                  <h1 className="uppercase text-sm py-2 flex items-center text-4xl sm:text-5xl md:text-6xl">
                     <IoSchoolOutline className="w-[30px] h-[30px] mr-2" />
                     <span className="text-bold text-[18px]">학력</span>
                   </h1>

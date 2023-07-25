@@ -4,7 +4,7 @@ const ProjectItem = ({ item }) => {
   return (
     <div className="w-full m-auto md:grid grid-cols-3 gap-8 mb-[150px]">
       <div className="col-span-2">
-        <h2 className="py-1">{item.project_name}</h2>
+        <h2 className="py-1 text-3xl sm:text-4xl">{item.project_name}</h2>
         <p className="text-gray-500">{item.project_period}</p>
         <p className="my-3 text-[25px] text-gray-600/90">{item.project_desc}</p>
         <div className="mt-8">

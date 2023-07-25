@@ -14,8 +14,8 @@ export default function Main() {
       <div className="z-1 absolute w-full h-full top-0 left-0 bg-gradient-to-t from-black/80 to-black/5" />
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div className="z-10">
-          <h1 className="py-2 text-white">FRONTEND DEVELOPER</h1>
-          <h1 className="py-4">
+          <h1 className="py-2 text-white text-4xl sm:text-5xl md:text-6xl">FRONTEND DEVELOPER</h1>
+          <h1 className="py-4 text-4xl sm:text-5xl md:text-6xl">
             <span className="text-white">- 조 재 영 -</span>
           </h1>
           <p className="py-4 sm:max-w-[70%] m-auto text-white">
