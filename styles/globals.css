@@ -12,13 +12,6 @@ html {
     @apply bg-[#ecf0f1] text-[#1f2937] tracking-wide;
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    @apply font-bold;
-  }
-
   .table-container {
     @apply md:grid h-full;
   }
@@ -72,7 +65,7 @@ html {
         border-color: rgb(229 231 235 / var(--tw-border-opacity));
     } */
 
-  .table-default,
+  /* .table-default,
   .table-flex {
     min-width: 100%;
   }
@@ -129,5 +122,5 @@ html {
 
   .table {
     display: table;
-  }
+  } */
 }

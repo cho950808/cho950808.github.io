@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Main from '../components/Main'
-import Skills from '../components/Skills'
-import Projects from '../components/Projects'
-import AboutMe from '../components/AboutMe'
+import Main from '../components/module/Main'
+import Skills from '../components/module/Skills'
+import Projects from '../components/module/Projects'
+import AboutMe from '../components/module/AboutMe'
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
 // import Image from 'next/image';
 import React from 'react'
 import SkillsItem from './SkillsItem'
-import skill_data from '../tmp/skill'
+import skill_data from '../../tmp/skill'
 
 export default function Skills() {
   return (

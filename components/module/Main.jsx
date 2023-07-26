@@ -1,6 +1,6 @@
 import React from 'react'
 // import { useRouter } from 'next/router';
-import { prefix } from '../config'
+import { prefix } from '../../config'
 
 export default function Main() {
   return (
@@ -14,12 +14,13 @@ export default function Main() {
       <div className="z-1 absolute w-full h-full top-0 left-0 bg-gradient-to-t from-black/80 to-black/5" />
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div className="z-10">
-          <h1 className="py-2 text-white text-4xl sm:text-5xl md:text-6xl">FRONTEND DEVELOPER</h1>
-          <h1 className="py-4 text-4xl sm:text-5xl md:text-6xl">
-            <span className="text-white">- 조 재 영 -</span>
+          <h1 className="py-2 text-white text-[70px] font-bold">FRONTEND DEVELOPER</h1>
+          <h1 className="py-4 text-[30px] font-bold">
+            <span className="text-white"> - 조 재 영 - </span>
           </h1>
-          <p className="py-4 sm:max-w-[70%] m-auto text-white">
-            I’m focused on building responsive front-end web applications integrating back-end technologies.
+          <p className="py-4 sm:max-w-[70%] m-auto text-white text-[16px]">
+            혁신적인 기술을 활용하여 유저 인터페이스와 경험을 혁신하는 것을 좋아하고 끊임없이 내가 만든 웹 페이지가
+            어떻게 보일지 상상하면서 작업하며, 유저가 좋아할 웹 페이지를 만들고 싶어합니다.
           </p>
         </div>
       </div>

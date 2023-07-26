@@ -1,10 +1,9 @@
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 import { CgProfile } from 'react-icons/cg'
 import { IoCalendarClearOutline, IoLocationOutline, IoSchoolOutline } from 'react-icons/io5'
-import { prefix } from '../config'
+import { prefix } from '../../config'
 
 const AboutMe = () => {
   const [name, setName] = useState('')
