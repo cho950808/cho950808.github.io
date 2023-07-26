@@ -7,9 +7,9 @@ const project_data = [
   {
     id: 1,
     project_route: 'starLight',
-    project_name: '다크 슬레이어(모바일 게임) - 운영툴, 통계툴',
+    project_name: '다크 슬레이어(모바일 게임) - 운영, 통계 어드민 툴',
     project_period: '2023. 6 ~ 2023. 8',
-    project_desc: '다크 슬레이어(8월 말 오픈 예정) 게임 내 운영, 통계툴 어드민',
+    project_desc: '다크 슬레이어:방치형 RPG(8월 말 오픈 예정) 게임 내 운영, 통계 어드민',
     project_thum: StarLightThum,
     project_image: [],
     project_info: [
@@ -57,7 +57,7 @@ const project_data = [
     project_image: [],
     project_info: [
       {
-        info: 'React Native로 Android, IOS 동시 개발 진행',
+        info: 'Android, IOS 동시 개발 진행',
       },
       {
         info: '피그마 UI 가이드를 통한 Styled-components로 전체 UI/UX 개발',
@@ -69,7 +69,7 @@ const project_data = [
         info: 'Recoil을 이용한 Glabal-State 관리',
       },
       {
-        info: 'API 프로토콜이 정리된 Swagger를 보고 클라이언트 개발',
+        info: 'Swagger에 정리된 API 프로토콜을 보고 클라이언트 개발',
       },
       {
         info: '다국어 및 다크/화이트 모드 제공',
@@ -114,7 +114,7 @@ const project_data = [
     ],
     project_tech: [
       {
-        tech: 'Next JS',
+        tech: 'Next.js',
       },
       {
         tech: 'Tailwind CSS',
@@ -151,7 +151,7 @@ const project_data = [
         tech: 'Spring framework',
       },
       {
-        tech: 'Vue',
+        tech: 'Vue.jS',
       },
       {
         tech: 'Jquery',

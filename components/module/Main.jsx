@@ -2,9 +2,9 @@ import React from 'react'
 // import { useRouter } from 'next/router';
 import { prefix } from '../../config'
 
-export default function Main() {
+const Main = () => {
   return (
-    <div
+    <section
       id="main"
       className="w-full h-screen text-center bg-cover bg-center"
       style={{
@@ -24,6 +24,8 @@ export default function Main() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
+
+export default Main

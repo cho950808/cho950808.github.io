@@ -6,90 +6,11 @@ import { IoCalendarClearOutline, IoLocationOutline, IoSchoolOutline } from 'reac
 import { prefix } from '../../config'
 
 const AboutMe = () => {
-  const [name, setName] = useState('')
-  const [phone, setPhone] = useState('')
-  const [mail, setMail] = useState('')
-  const [subject, setSubject] = useState('')
-  const [message, setMessage] = useState('')
-  const [errors, setErrors] = useState({})
-  const [buttonText, setButtonText] = useState('Send message')
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false)
-  const [showFailureMessage, setShowFailureMessage] = useState(false)
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    let isValidForm = handleValidation()
-
-    if (isValidForm) {
-      setButtonText('Sending...')
-      const res = await fetch('/api/sendgrid', {
-        body: JSON.stringify({
-          mail,
-          phone,
-          name,
-          subject,
-          message,
-        }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        method: 'POST',
-      })
-      const { error } = await res.json()
-      if (error) {
-        setShowSuccessMessage(false)
-        setShowFailureMessage(true)
-        setButtonText('Send')
-        return
-      }
-      setShowSuccessMessage(true)
-      setShowFailureMessage(false)
-      setButtonText('Send message')
-      setName('')
-      setPhone('')
-      setMail('')
-      setSubject('')
-      setMessage('')
-    }
-    console.log(name, mail, subject, message)
-  }
-
-  const handleValidation = () => {
-    let tempErrors = {}
-    let isValid = true
-
-    if (name.length <= 0) {
-      tempErrors['fullname'] = true
-      isValid = false
-    }
-    if (mail.length <= 0) {
-      tempErrors['email'] = true
-      isValid = false
-    }
-    if (subject.length <= 0) {
-      tempErrors['subject'] = true
-      isValid = false
-    }
-    if (message.length <= 0) {
-      tempErrors['message'] = true
-      isValid = false
-    }
-
-    setErrors({ ...tempErrors })
-    // console.log('errors', errors);
-    return isValid
-  }
-  const router = useRouter()
-  const handleResume = (e) => {
-    e.preventDefault()
-    router.push('/myResume')
-  }
-
   return (
-    <div id="aboutMe" className="w-full mt-20">
+    <section id="aboutMe" className="w-full mt-[200px]">
       <div className="max-w-[1240px] m-auto w-full">
-        <p className="text-xl tracking-widest uppercase text-[#6fa2c7]">About Me</p>
-        <h2 className="py-4 text-3xl sm:text-4xl">Profile</h2>
+        <p className="uppercase text-[20px] tracking-widest text-[#6fa2c7] mb-5">About Me</p>
+        <h2 className="text-[30px] font-bold">Profile</h2>
         <div className="grid lg:grid-cols-6 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full w-full flex flex-col items-center justify-center">
@@ -159,7 +80,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
