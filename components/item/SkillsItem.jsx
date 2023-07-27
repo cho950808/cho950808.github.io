@@ -7,7 +7,7 @@ const SkillsItem = ({ urlImg, framework }) => {
         <div className="m-auto overflow-hidden h-[50px] w-[50px]">
           <img src={urlImg} className="h-full w-full" />
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center font-bold">
           <h3 className="uppercase">{framework}</h3>
         </div>
       </div>

@@ -74,6 +74,9 @@ const project_data = [
       {
         info: '다국어 및 다크/화이트 모드 제공',
       },
+      {
+        info: 'SNS 로그인 (페이스북, 구글) 구현',
+      },
     ],
     project_tech: [
       {
