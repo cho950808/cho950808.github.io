@@ -1,5 +1,4 @@
-// import Image from 'next/image';
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 import { useRouter } from 'next/router'
 import React, { useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai'
@@ -49,17 +48,17 @@ const NavBar = () => {
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex mr-10">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:scale-105">HOME</li>
+            <Link activeClass="active" to="home">
+              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">HOME</li>
             </Link>
-            <Link href="/#aboutMe">
-              <li className="ml-10 text-sm uppercase hover:scale-105">ABOUT</li>
+            <Link activeClass="active" to="aboutMe">
+              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">ABOUT</li>
             </Link>
-            <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:scale-105">SKILLS</li>
+            <Link activeClass="active" to="skills">
+              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">SKILLS</li>
             </Link>
-            <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:scale-105">PROJECTS</li>
+            <Link activeClass="active" to="projects">
+              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">PROJECTS</li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden cursor-pointer px-2">

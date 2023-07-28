@@ -1,11 +1,11 @@
 import React from 'react'
-// import { useRouter } from 'next/router';
 import { prefix } from '../../config'
+import { Element } from 'react-scroll'
 
 const Main = () => {
   return (
-    <section
-      id="main"
+    <Element
+      name="home"
       className="w-full h-screen text-center bg-cover bg-center"
       style={{
         backgroundImage: `url('${prefix}/assets/projects/banner.jpeg')`,
@@ -24,7 +24,7 @@ const Main = () => {
           </h1>
         </div>
       </div>
-    </section>
+    </Element>
   )
 }
 

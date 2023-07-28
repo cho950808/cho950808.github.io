@@ -4,11 +4,12 @@ import { IoCalendarClearOutline, IoLocationOutline, IoSchoolOutline } from 'reac
 import { prefix } from '../../config'
 import { AiFillGithub, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 import { SiNotion } from 'react-icons/si'
+import { Element } from 'react-scroll'
 
 const AboutMe = () => {
   return (
-    <section id="aboutMe" className="w-full mt-[200px]">
-      <div className="max-w-[1240px] m-auto w-full">
+    <Element name="aboutMe" className="w-full h-screen">
+      <div className="max-w-[1240px] mx-auto w-full h-full justify-center flex flex-col">
         <p className="uppercase text-[20px] tracking-widest text-[#6fa2c7] mb-2">About Me</p>
         <h2 className="text-[30px] font-bold">Profile</h2>
         <div className="grid lg:grid-cols-6 gap-8">
@@ -20,7 +21,7 @@ const AboutMe = () => {
                 <img src={`${prefix}/assets/projects/profile.jpeg`} className="w-full h-full object-cover" />
               </div>
               <div>
-                <p className="font-bold py-4 text-[18px]">2년 차, 프론트엔드 개발자</p>
+                <p className="py-4 text-[18px]">2년 차, 프론트엔드 개발자</p>
               </div>
               <div className="flex items-center space-x-8 py-4">
                 <a
@@ -98,7 +99,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   )
 }
 
