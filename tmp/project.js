@@ -6,30 +6,33 @@ import StarLightThum from '../public/assets/projects/starlight_thum.jpg'
 const project_data = [
   {
     id: 1,
-    project_route: 'starLight',
+    project_route: 'darkSlayer',
     project_name: '다크 슬레이어(모바일 게임) - 운영, 통계 어드민 툴',
-    project_period: '2023. 6 ~ 2023. 8',
+    project_period: '2023. 6 ~ 현재',
     project_desc: '다크 슬레이어:방치형 RPG(8월 말 오픈 예정) 게임 내 운영, 통계 어드민',
     project_thum: StarLightThum,
     project_image: [],
     project_info: [
       {
-        info: '가이드(매뉴얼) 작성 및 문서화',
-      },
-      {
         info: '게임 퍼블리셔(게임을 판매와 유통하는 회사) 기능 요구 사항 맞춤 구현',
       },
       {
-        info: 'Redux Toolkit을 이용한 Glabal-State 관리',
+        info: 'React.lazy를 활용해 필요한 컴포넌트만 로드할 수 있도록 코드 스플리팅 구현',
       },
       {
-        info: 'Go로 개발된 프로토콜로 클라이언트 개발',
+        info: '사용자 역할에 따른 페이지 접근 제한 기능 구현',
       },
       {
-        info: 'TypeScript 도입',
+        info: 'Redux Toolkit을 이용한 상태 관리',
       },
       {
-        info: '개발 환경 구축 (QA, Dev, Prod) 및 GitLab 자동 배포 도입',
+        info: '메모이제이션(useCallback, useMemo)을 사용하여 불필요한 렌더링 방지 및 성능 향상',
+      },
+      {
+        info: 'Js(Javascript)에서 Ts(Typescript)로 마이그레이션',
+      },
+      {
+        info: '설계 및 개발 환경 구축 (QA, Dev, Prod) 및 GitLab 자동 배포 도입',
       },
     ],
     project_tech: [
@@ -63,16 +66,10 @@ const project_data = [
         info: '피그마 UI 가이드를 통한 Styled-components로 전체 UI/UX 개발',
       },
       {
-        info: '효율적인 협업을 위해 업무 가이드 문서 작성',
-      },
-      {
         info: 'Recoil을 이용한 Glabal-State 관리',
       },
       {
-        info: 'Swagger에 정리된 API 프로토콜을 보고 클라이언트 개발',
-      },
-      {
-        info: '다국어 및 다크/화이트 모드 제공',
+        info: '다국어(인도네시아, 영어, 한국어) 및 다크/화이트 모드 제공',
       },
       {
         info: 'SNS 로그인 (페이스북, 구글) 구현',
@@ -100,10 +97,10 @@ const project_data = [
     project_image: [],
     project_info: [
       {
-        info: 'NFT 민팅 가스비 이슈 해결',
+        info: 'NFT 민팅 시 케이스 별로 작성하여 가스비 오류 해결 (최적의 가스 양 책정)',
       },
       {
-        info: '거래 테스트 시 케이스 별로 문서화 (최적의 가스 양 책정)',
+        info: '서비스 개발 및 운영 이슈 대응',
       },
       {
         info: 'Go로 개발된 프로토콜로 클라이언트 개발',
@@ -123,7 +120,7 @@ const project_data = [
         tech: 'Tailwind CSS',
       },
       {
-        tech: 'Web3',
+        tech: 'Web3.js',
       },
       {
         tech: 'Framer-motion',

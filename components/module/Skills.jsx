@@ -7,7 +7,7 @@ import { Element } from 'react-scroll'
 const Skills = () => {
   return (
     <Element name="skills" className="w-full h-screen">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full ">
+      <div className="max-w-[1024px] mx-auto flex flex-col justify-center h-full ">
         <p className="uppercase text-[20px] tracking-widest text-[#6fa2c7] mb-2">Skills</p>
         <h2 className="text-[30px] font-bold mb-4">Main-Skill</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
