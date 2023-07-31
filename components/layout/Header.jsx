@@ -42,7 +42,6 @@ const Header = () => {
   }, [isMobile])
 
   useEffect(() => {
-    console.log(isMobile)
     handle()
   }, [])
 

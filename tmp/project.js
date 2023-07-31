@@ -9,7 +9,7 @@ const project_data = [
     project_route: 'darkSlayer',
     project_name: '다크 슬레이어(모바일 게임) - 운영, 통계 어드민 툴',
     project_period: '2023. 6 ~ 현재',
-    project_desc: '다크 슬레이어:방치형 RPG(8월 말 오픈 예정) 게임 내 운영, 통계 어드민',
+    project_desc: '다크 슬레이어:방치형 RPG(8월 말 소프트 런칭)',
     project_thum: StarLightThum,
     project_image: [],
     project_info: [

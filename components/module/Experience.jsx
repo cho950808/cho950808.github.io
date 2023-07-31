@@ -1,11 +1,14 @@
 import React from 'react'
 import Container from '../common/Container'
+import experience_data from '../../tmp/experience'
+import ExperienceItem from '../item/ExperienceItem'
 
 const Experience = () => {
   return (
     <Container scrollName="experience" title="experience">
-      <h2 className="text-[20px] lg:text-[30px] font-bold mb-4">Experience</h2>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4"></div>
+      {experience_data.map((item, index) => {
+        return <ExperienceItem item={item} key={`experience_${index}`} />
+      })}
     </Container>
   )
 }
