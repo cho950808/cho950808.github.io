@@ -7,7 +7,7 @@ const skill_data = [
     image_alt: 'javascript 이미지 입니다.',
   },
   {
-    framework: 'react js',
+    framework: 'react.js',
     skill_image: `${prefix}/assets/skills/react.png`,
     image_alt: 'react 이미지 입니다.',
   },
@@ -17,7 +17,7 @@ const skill_data = [
     image_alt: 'react-native 이미지 입니다.',
   },
   {
-    framework: 'next js',
+    framework: 'next.js',
     skill_image: `${prefix}/assets/skills/nextjs.png`,
     image_alt: 'next.js 이미지 입니다.',
   },
@@ -27,7 +27,7 @@ const skill_data = [
     image_alt: 'redux 이미지 입니다.',
   },
   {
-    framework: 'tailwind',
+    framework: 'tailwind CSS',
     skill_image: `${prefix}/assets/skills/tailwind.png`,
     image_alt: 'tailwind 이미지 입니다.',
   },

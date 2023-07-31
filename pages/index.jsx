@@ -1,8 +1,5 @@
 import Head from 'next/head'
-import Main from '../components/module/Main'
-import Skills from '../components/module/Skills'
-import Projects from '../components/module/Projects'
-import AboutMe from '../components/module/AboutMe'
+import { Main, AboutMe, Skills, Projects, Experience } from '../components/module'
 
 export default function Home() {
   return (
@@ -14,10 +11,13 @@ export default function Home() {
           content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences."
         />
       </Head>
-      <Main />
-      <AboutMe />
-      <Skills />
-      <Projects />
+      <main>
+        <Main />
+        <AboutMe />
+        <Skills />
+        <Experience />
+        <Projects />
+      </main>
     </div>
   )
 }

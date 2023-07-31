@@ -1,22 +1,23 @@
 import { Link } from 'react-scroll'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiFillGithub, AiOutlineMail } from 'react-icons/ai'
 import { SiNotion } from 'react-icons/si'
 import { isMobile } from 'react-device-detect'
 
-const NavBar = () => {
+const Header = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
   const [navBg, setNavBg] = useState('transparent')
   const [linkColor, setLinkColor] = useState('#ecf0f1')
+
   const handleNav = () => {
     setNav(!nav)
   }
 
-  useEffect(() => {
+  const handle = useCallback(() => {
     const handleShadow = () => {
-      if (isMobile) {
-        if (window.scrollY >= 200) {
+      if (!isMobile) {
+        if (window.scrollY >= 400) {
           setShadow(true)
           setNavBg('#ecf0f1')
           setLinkColor('#1f2937')
@@ -26,7 +27,7 @@ const NavBar = () => {
           setLinkColor('#ecf0f1')
         }
       } else {
-        if (window.scrollY >= 800) {
+        if (window.scrollY >= 200) {
           setShadow(true)
           setNavBg('#ecf0f1')
           setLinkColor('#1f2937')
@@ -38,6 +39,11 @@ const NavBar = () => {
       }
     }
     window.addEventListener('scroll', handleShadow)
+  }, [isMobile])
+
+  useEffect(() => {
+    console.log(isMobile)
+    handle()
   }, [])
 
   return (
@@ -46,24 +52,27 @@ const NavBar = () => {
       className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
-          <p className={`ml-10 font-medium text-xluppercase hover:scale-105`} style={{ color: `${linkColor}` }}>
+        <Link activeClass="active" to="home">
+          <p
+            className={`ml-10 font-medium text-xluppercase hover:scale-105 cursor-pointer`}
+            style={{ color: `${linkColor}` }}
+          >
             CHO JAE YOUNG
           </p>
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex mr-10">
-            <Link activeClass="active" to="home">
-              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">HOME</li>
-            </Link>
             <Link activeClass="active" to="aboutMe">
-              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">ABOUT</li>
+              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">about</li>
             </Link>
             <Link activeClass="active" to="skills">
-              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">SKILLS</li>
+              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">skills</li>
+            </Link>
+            <Link activeClass="active" to="experience">
+              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">experience</li>
             </Link>
             <Link activeClass="active" to="projects">
-              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">PROJECTS</li>
+              <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">projects</li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden cursor-pointer px-2">
@@ -93,11 +102,6 @@ const NavBar = () => {
 
           <div className="py-4 flex flex-col h-[90vh]">
             <ul className="uppercase">
-              <Link activeClass="active" to="home">
-                <li onClick={() => setNav(!nav)} className="py-4 text-sm hover:border-b">
-                  Home
-                </li>
-              </Link>
               <Link activeClass="active" to="aboutMe">
                 <li onClick={() => setNav(!nav)} className="py-4 text-sm hover:border-b">
                   About
@@ -145,4 +149,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Header

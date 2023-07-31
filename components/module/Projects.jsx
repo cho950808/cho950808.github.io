@@ -1,18 +1,17 @@
 import React, { useState } from 'react'
 import project from '../../tmp/project'
 import ProjectItem from '../item/ProjectsItem'
-import { Element } from 'react-scroll'
+import Container from '../common/Container'
 
 const Projects = () => {
-  const [info, setInfo] = useState(project)
+  const [info] = useState(project)
 
   return (
-    <Element name="projects" className="max-w-[1024px] m-auto p-2 flex flex-col py-16 p-4 lg:p-0">
-      <p className="uppercase text-[20px] tracking-widest text-[#6fa2c7] mb-2">Projects</p>
+    <Container scrollName="projects" title="projects">
       {info.map((item, index) => {
         return <ProjectItem item={item} key={`project_${index}`} />
       })}
-    </Element>
+    </Container>
   )
 }
 
