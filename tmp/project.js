@@ -14,7 +14,7 @@ const project_data = [
     project_image: [],
     project_info: [
       {
-        info: '게임 퍼블리셔(게임을 판매와 유통하는 회사) 기능 요구 사항 맞춤 구현',
+        info: '게임 퍼블리셔(게임을 판매와 유통하는 회사) 기능 요구 사항 도출 및 화면 설계',
       },
       {
         info: 'React.lazy를 활용해 필요한 컴포넌트만 로드할 수 있도록 코드 스플리팅 구현',
@@ -23,7 +23,7 @@ const project_data = [
         info: '사용자 역할에 따른 페이지 접근 제한 기능 구현',
       },
       {
-        info: 'Redux Toolkit을 이용한 상태 관리',
+        info: 'RTK(Redux-Toolkit)를 이용한 glabal-state 관리',
       },
       {
         info: '메모이제이션(useCallback, useMemo)을 사용하여 불필요한 렌더링 방지 및 성능 향상',
@@ -32,7 +32,7 @@ const project_data = [
         info: 'Js(Javascript)에서 Ts(Typescript)로 마이그레이션',
       },
       {
-        info: '설계 및 개발 환경 구축 (QA, Dev, Prod) 및 GitLab 자동 배포 도입',
+        info: '개발 환경 구축 (QA, Dev, Prod) 및 GitLab 자동 배포 도입',
       },
     ],
     project_tech: [
@@ -110,6 +110,9 @@ const project_data = [
       },
       {
         info: 'Redux를 이용한 Glabal-State 관리',
+      },
+      {
+        info: '구글 애널리틱스(Google Analytics)를 적용해 이벤트와 행동 데이터 수집',
       },
     ],
     project_tech: [

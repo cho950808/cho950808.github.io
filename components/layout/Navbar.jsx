@@ -1,40 +1,45 @@
 import { Link } from 'react-scroll'
-import { useRouter } from 'next/router'
 import React, { useState, useEffect } from 'react'
-import { AiOutlineClose, AiOutlineMenu, AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { AiOutlineClose, AiOutlineMenu, AiFillGithub, AiOutlineMail } from 'react-icons/ai'
+import { SiNotion } from 'react-icons/si'
+import { isMobile } from 'react-device-detect'
 
 const NavBar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
   const [navBg, setNavBg] = useState('transparent')
   const [linkColor, setLinkColor] = useState('#ecf0f1')
-  const router = useRouter()
-
   const handleNav = () => {
     setNav(!nav)
   }
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 800) {
-        setShadow(true)
-        setNavBg('#ecf0f1')
-        setLinkColor('#1f2937')
+      if (isMobile) {
+        if (window.scrollY >= 200) {
+          setShadow(true)
+          setNavBg('#ecf0f1')
+          setLinkColor('#1f2937')
+        } else {
+          setShadow(false)
+          setNavBg('transparent')
+          setLinkColor('#ecf0f1')
+        }
       } else {
-        setShadow(false)
-        setNavBg('transparent')
-        setLinkColor('#ecf0f1')
+        if (window.scrollY >= 800) {
+          setShadow(true)
+          setNavBg('#ecf0f1')
+          setLinkColor('#1f2937')
+        } else {
+          setShadow(false)
+          setNavBg('transparent')
+          setLinkColor('#ecf0f1')
+        }
       }
     }
     window.addEventListener('scroll', handleShadow)
   }, [])
 
-  const handleResume = (e) => {
-    e.preventDefault()
-    router.push('/myResume')
-    setNav(!nav)
-  }
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
@@ -84,29 +89,26 @@ const NavBar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">together</p>
-            </div>
           </div>
 
           <div className="py-4 flex flex-col h-[90vh]">
             <ul className="uppercase">
-              <Link href="/">
+              <Link activeClass="active" to="home">
                 <li onClick={() => setNav(!nav)} className="py-4 text-sm hover:border-b">
                   Home
                 </li>
               </Link>
-              <Link href="/#about">
+              <Link activeClass="active" to="aboutMe">
                 <li onClick={() => setNav(!nav)} className="py-4 text-sm hover:border-b">
                   About
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link activeClass="active" to="skills">
                 <li onClick={() => setNav(!nav)} className="py-4 text-sm hover:border-b">
                   Skills
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link activeClass="active" to="projects">
                 <li onClick={() => setNav(!nav)} className="py-4 text-sm hover:border-b">
                   Projects
                 </li>
@@ -116,29 +118,24 @@ const NavBar = () => {
               <p className="uppercase tracking-widest text-[#6fa2c7]"> connect</p>
               <div className="flex items-center justify-between w-full my-4 sm:w-[80%]">
                 <a
-                  href="https://www.linkedin.com/in/gw%C3%A9na%C3%ABl-gu%C3%A9rin-0636901a7/"
+                  href="https://handy-sweater-035.notion.site/Technology-1b3c7818b53f4178803290b2c1844053?pvs=4"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-125 ease-in duration-150">
-                    <AiFillLinkedin />
+                    <SiNotion />
                   </div>
                 </a>
-                <a href="https://github.com/gwen-guerin" target="_blank" rel="noreferrer">
+                <a href="https://github.com/cho950808" target="_blank" rel="noreferrer">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-125 ease-in duration-150">
                     <AiFillGithub />
                   </div>
                 </a>
-                <a href="mailto:gwenael.guerin@protonmail.com">
+                <a href="mailto:tjsthrl1111@gmail.com">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-125 ease-in duration-150">
                     <AiOutlineMail />
                   </div>
                 </a>
-                <Link onClick={handleResume} href="/#myResume" target="_blank">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-125 ease-in duration-150">
-                    <BsFillPersonLinesFill />
-                  </div>
-                </Link>
               </div>
             </div>
           </div>
