@@ -1,4 +1,4 @@
-## 기술
+## 적용 기술
 - Next.js
 - Tailwind CSS
 - Framer-motion
