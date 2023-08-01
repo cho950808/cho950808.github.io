@@ -12,7 +12,7 @@ const skill_data = [
     image_alt: 'react 이미지 입니다.',
   },
   {
-    framework: 'react-native',
+    framework: `react-native`,
     skill_image: `${prefix}/assets/skills/react.png`,
     image_alt: 'react-native 이미지 입니다.',
   },

@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
-      className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}
+      className={`h-[60px] lg:h-20 ${shadow ? 'fixed w-full shadow-xl z-[100]' : 'fixed w-full  z-[100]'}`}
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link activeClass="active" to="home">
@@ -84,8 +84,8 @@ const Header = () => {
         <div
           className={
             nav
-              ? 'fixed left-0 top-0 w-[75%] sm:[60%] md:[45%] h-screen bg-[#ecf0f3] p-10 ease duration-500'
-              : 'fixed left-[-100%] top-0 p-10 ease duration-500'
+              ? 'fixed right-0 top-0 w-[75%] sm:[60%] md:[45%] h-screen bg-[#ecf0f3] p-10 ease duration-500'
+              : 'fixed right-[-100%] top-0 p-10 ease duration-500'
           }
         >
           <div>
