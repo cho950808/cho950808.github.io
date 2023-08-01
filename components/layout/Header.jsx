@@ -53,7 +53,7 @@ const Header = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link activeClass="active" to="home">
           <p
-            className={`ml-10 font-medium text-xluppercase hover:scale-105 cursor-pointer`}
+            className={`ml-3 lg:ml-10 font-medium text-xluppercase hover:scale-105 cursor-pointer`}
             style={{ color: `${linkColor}` }}
           >
             CHO JAE YOUNG

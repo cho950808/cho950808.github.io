@@ -1,32 +1,36 @@
-import { CgProfile } from 'react-icons/cg'
-import { IoCalendarClearOutline, IoSchoolOutline } from 'react-icons/io5'
-import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
+import { SiNotion } from 'react-icons/si'
+import { HiOutlineMail, HiPhone } from 'react-icons/hi'
 
 const profile_data = [
   {
-    icon: <CgProfile />,
-    title: '이름',
-    text: '조재영',
+    title: 'Contact',
+    info: [
+      {
+        icon: <HiOutlineMail />,
+        link: 'mailto:tjsthrl1111@gmail.com',
+        text: 'tjsthrl1111@gmail.com',
+      },
+      {
+        icon: <HiPhone />,
+        text: '010-4073-2899',
+      },
+    ],
   },
   {
-    icon: <AiOutlinePhone />,
-    title: '전화번호',
-    text: '010-4073-2899',
-  },
-  {
-    icon: <IoCalendarClearOutline />,
-    title: '생년월일',
-    text: '1995. 8, 8',
-  },
-  {
-    icon: <AiOutlineMail />,
-    title: '이메일',
-    text: 'tjsthrl1111@gmail.com',
-  },
-  {
-    icon: <IoSchoolOutline />,
-    title: '학력',
-    text: '강릉원주대학교 (멀티미디어공학부)',
+    title: 'Channel',
+    info: [
+      {
+        icon: <SiNotion />,
+        link: 'https://url.kr/d6v325',
+        text: 'https://url.kr/d6v325',
+      },
+      {
+        icon: <AiFillGithub />,
+        link: 'https://github.com/cho950808',
+        text: 'https://github.com/cho950808',
+      },
+    ],
   },
 ]
 
