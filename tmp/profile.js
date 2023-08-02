@@ -9,12 +9,12 @@ const profile_data = [
     title: 'Contact',
     info: [
       {
-        icon: <HiOutlineMail />,
+        icon: <HiOutlineMail className="w-4 h-4" />,
         link: 'mailto:tjsthrl1111@gmail.com',
         text: 'tjsthrl1111@gmail.com',
       },
       {
-        icon: <HiPhone />,
+        icon: <HiPhone className="w-4 h-4" />,
         text: '010-4073-2899',
       },
     ],
@@ -23,12 +23,12 @@ const profile_data = [
     title: 'Channel',
     info: [
       {
-        icon: <SiNotion />,
+        icon: <SiNotion className="w-4 h-4" />,
         link: 'https://url.kr/d6v325',
         text: 'https://url.kr/d6v325',
       },
       {
-        icon: <AiFillGithub />,
+        icon: <AiFillGithub className="w-4 h-4" />,
         link: 'https://github.com/cho950808',
         text: 'https://github.com/cho950808',
       },

@@ -7,10 +7,10 @@ const AboutMe = () => {
   return (
     <Container scrollName="aboutMe" title="ABOUT ME">
       <article>
-        <div className="w-full grid grid-cols-3 h-full shadow-xl shadow-gray-400 rounded-xl p-4">
-          <div className="lg:p-4 col-span-3 lg:col-span-1 h-full w-full flex flex-col items-center justify-center">
+        <div className="w-full grid grid-cols-3 h-full shadow-xl shadow-gray-400 rounded-xl p-5">
+          <div className="lg:py-6 col-span-3 lg:col-span-1 h-full w-full flex flex-col items-center justify-center">
             <div
-              className={`flex items-center justify-center w-full max-h-[280px] lg:w-[290px] lg:h-[290px] rounded-lg lg:rounded-full overflow-hidden border-sky-10 border-2`}
+              className={`flex items-center justify-center w-full max-h-[280px] lg:w-full lg:max-h-full rounded-lg overflow-hidden border-sky-10 border-2`}
             >
               <img
                 src={`${prefix}/assets/projects/profile.jpeg`}
@@ -20,7 +20,7 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="flex flex-col col-span-3 lg:col-span-2 mt-3 lg:mt-0 lg:p-3">
+          <div className="flex flex-col col-span-3 lg:col-span-2 mt-3 lg:mt-0 lg:p-6">
             <div className="lg:grid lg:grid-cols-2">
               {profile_data.map((item, index) => {
                 return (
@@ -29,18 +29,17 @@ const AboutMe = () => {
                       <div className="h-4 lg:h-6 w-1.5 bg-blue-500 mr-2" />
                       {item.title}
                     </h1>
-                    <div className="flex flex-col mt-2">
+                    <div className="flex flex-col mt-2 gap-1.5">
                       {item.info?.map((info, idx) => {
                         return (
-                          <p className="items-center flex text-tiny opacity-70" key={`profile_info_${idx}`}>
-                            {info.icon}
-                            &nbsp;
+                          <div className="flex items-center opacity-70" key={`profile_info_${idx}`}>
+                            <p className="text-tiny mr-2">{info.icon}</p>
                             <span>
                               <a href={info.link} target="_blank" rel="noreferrer">
                                 {info.text}
                               </a>
                             </span>
-                          </p>
+                          </div>
                         )
                       })}
                     </div>
@@ -49,8 +48,8 @@ const AboutMe = () => {
               })}
             </div>
 
-            <div className="flex flex-col">
-              <h1 className="flex items-center font-bold text-lg lg:text-1xl text-gray-700 mt-5">
+            <div className="flex flex-col mt-12">
+              <h1 className="flex items-center font-bold text-lg lg:text-1xl text-gray-700">
                 <div className="h-4 lg:h-6 w-1.5 bg-blue-500 mr-2" />
                 Introduce
               </h1>
