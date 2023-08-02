@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Cho Jae Young | FrontEnd Developer</title>
-        <meta
-          name="description"
-          content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences."
-        />
+        <title>Jaeyoung, Cho | FrontEnd Developer</title>
+        <meta name="keyword" content="react, React.js, Next.js, TailwindCSS, HTML, css, Portfolio" />
+        <meta name="description" content="Jaeyoung, Cho Portfolio Page" />
+        <meta name="author" content="Jaeyoung, Cho" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <main>
         <Banner />

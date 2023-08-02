@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'PuradakGentleGothicR';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
@@ -5,9 +9,15 @@
   font-style: normal;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@keyframes bounceArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
 
 *,
 html {
@@ -41,28 +51,13 @@ html {
     background: #555;
   }
 
-  .table-container {
-    @apply md:grid h-full;
+  .arrow-icon {
+    animation: bounceArrow 1.3s ease-in-out infinite;
   }
+}
 
-  .table-wrap-cols-1 {
-    @apply md:grid grid-cols-1 h-full;
-  }
-
-  .table-wrap-cols-2 {
-    @apply md:grid grid-cols-2 h-full;
-  }
-
-  .dark .card-shadow,
-  .table-default.borderless-row tbody > :not([hidden]) ~ :not([hidden]) {
-    border-style: none;
-  }
-
-  .table-default thead > tr > th,
-  .table-flex .thead .tr .th {
-    letter-spacing: 0.05em;
-    text-align: left;
-    text-transform: uppercase;
-    white-space: nowrap;
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 border border-[#242424] rounded-full uppercase tracking-widest text-white transition-all hover:border-[#F7AB0A]/80 hover:text-[#F7AB0A]/80;
   }
 }

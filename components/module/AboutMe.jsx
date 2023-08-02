@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className="w-full grid grid-cols-3 h-full shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="lg:p-4 col-span-3 lg:col-span-1 h-full w-full flex flex-col items-center justify-center">
             <div
-              className={`flex items-center justify-center w-full max-h-[320px] lg:w-[290px] lg:h-[290px] rounded-full overflow-hidden border-sky-10 border-2`}
+              className={`flex items-center justify-center w-full max-h-[280px] lg:w-[290px] lg:h-[290px] rounded-lg lg:rounded-full overflow-hidden border-sky-10 border-2`}
             >
               <img
                 src={`${prefix}/assets/projects/profile.jpeg`}
