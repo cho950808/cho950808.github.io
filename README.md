@@ -2,7 +2,6 @@
 
 - Next.js
 - Tailwind CSS
-- Framer-motion
   <br />
 
 ## 구현 내용
