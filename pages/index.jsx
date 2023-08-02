@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Main, AboutMe, Skills, Projects, Experience } from '../components/module'
+import { Banner, AboutMe, Skills, Projects, Experience, TopScroll } from '../components/module'
 
 export default function Home() {
   return (
@@ -12,12 +12,13 @@ export default function Home() {
         />
       </Head>
       <main>
-        <Main />
+        <Banner />
         <AboutMe />
         <Skills />
         <Experience />
         <Projects />
       </main>
+      <TopScroll />
     </div>
   )
 }

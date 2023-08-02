@@ -1,5 +1,5 @@
-import { Link } from 'react-scroll'
 import React, { useState, useEffect, useCallback } from 'react'
+import { Link } from 'react-scroll'
 import { AiOutlineClose, AiOutlineMenu, AiFillGithub, AiOutlineMail } from 'react-icons/ai'
 import { SiNotion } from 'react-icons/si'
 import { isMobile } from 'react-device-detect'
