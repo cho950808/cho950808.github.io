@@ -10,7 +10,7 @@ const SkillsItem = (props) => {
           <img src={item.skill_image} className="h-full w-full" alt={item?.image_alt} />
         </div>
         <div className="flex flex-col justify-center items-center font-bold text-[11px] lg:text-tiny">
-          <h3 className="">{item.framework}</h3>
+          <p className="whitespace-pre-wrap lg:whitespace-normal text-center lg:text-left">{item.framework}</p>
         </div>
       </div>
     </div>
