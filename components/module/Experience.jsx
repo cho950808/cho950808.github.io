@@ -10,7 +10,7 @@ const Experience = () => {
       <motion.div
         whileInView={{ x: 0, y: 15, scale: 1, rotate: 0, opacity: 1 }}
         initial={{ x: 0, y: 0, scale: 1, rotate: 0, opacity: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ duration: 1.0 }}
       >
         {experience_data.map((item, index) => {

@@ -2,12 +2,12 @@ import { prefix } from '../config'
 
 const skill_data = [
   {
-    framework: `Html`,
+    framework: `HTML`,
     skill_image: `${prefix}/assets/skills/html.png`,
     image_alt: 'html 이미지 입니다.',
   },
   {
-    framework: `Css`,
+    framework: `CSS`,
     skill_image: `${prefix}/assets/skills/css.png`,
     image_alt: 'css 이미지 입니다.',
   },
@@ -22,12 +22,12 @@ const skill_data = [
     image_alt: 'react 이미지 입니다.',
   },
   {
-    framework: `React-native`,
+    framework: `React Native`,
     skill_image: `${prefix}/assets/skills/react-native.png`,
     image_alt: 'react-native 이미지 입니다.',
   },
   {
-    framework: `TailwindCSS`,
+    framework: `Tailwind CSS`,
     skill_image: `${prefix}/assets/skills/tailwind.png`,
     image_alt: 'tailwind 이미지 입니다.',
   },

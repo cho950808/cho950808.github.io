@@ -48,7 +48,7 @@ const experience_data = [
               href="https://new.ssem.or.kr/"
               target="_blank"
             >
-              NEW SSEM
+              New SSEM
             </a>
             (서울 비대면 화상 수업) 개발 이슈 대응
           </span>

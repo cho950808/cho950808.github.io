@@ -11,7 +11,7 @@ const Skills = () => {
         className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4"
         whileInView={{ x: 0, y: 15, scale: 1, rotate: 0, opacity: 1 }}
         initial={{ x: 0, y: 0, scale: 1, rotate: 0, opacity: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ duration: 1.0 }}
       >
         {skill_data.map((item, index) => {
