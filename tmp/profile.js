@@ -2,7 +2,7 @@ import { AiFillGithub } from 'react-icons/ai'
 import { SiNotion } from 'react-icons/si'
 import { HiOutlineMail, HiPhone } from 'react-icons/hi'
 
-export const words = ['안녕하세요 조재영입니다.', '2년차 프론트엔드 개발자']
+export const words = [`안녕하세요.\n끊임없이 성장을 추구하는`, `2년차 프론트엔드 개발자\n조재영 입니다.`]
 
 const profile_data = [
   {

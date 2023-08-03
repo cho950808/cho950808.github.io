@@ -2,12 +2,19 @@ import React from 'react'
 import Container from '../common/Container'
 import { prefix } from '../../config'
 import profile_data from '../../tmp/profile'
+import { motion } from 'framer-motion'
 
 const AboutMe = () => {
   return (
     <Container scrollName="aboutMe" title="ABOUT ME">
       <article>
-        <div className="w-full grid grid-cols-3 h-full shadow-xl shadow-gray-400 rounded-xl p-5">
+        <motion.div
+          className="w-full grid grid-cols-3 h-full shadow-xl shadow-gray-400 rounded-xl p-5"
+          whileInView={{ x: 0, y: 15, scale: 1, rotate: 0, opacity: 1 }}
+          initial={{ x: 0, y: 0, scale: 1, rotate: 0, opacity: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.0 }}
+        >
           <div className="lg:py-6 col-span-3 lg:col-span-1 h-full w-full flex flex-col items-center justify-center">
             <div
               className={`flex items-center justify-center w-full max-h-[280px] lg:w-full lg:max-h-full rounded-lg overflow-hidden border-sky-10 border-2`}
@@ -61,7 +68,7 @@ const AboutMe = () => {
               <img src={`${prefix}/assets/projects/sign.png`} className="w-[130px]  object-cover" alt="사인 입니다." />
             </div>
           </div>
-        </div>
+        </motion.div>
       </article>
     </Container>
   )

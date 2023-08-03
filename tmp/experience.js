@@ -15,7 +15,7 @@ const experience_data = [
           <span>
             구글 스토어 50만 다운로드 &nbsp;
             <a
-              class="text-blue-600 hover:underline hover:underline-offset-4"
+              className="text-blue-600 hover:underline hover:underline-offset-4"
               href="https://play.google.com/store/apps/details?id=com.wishM.readitjoy&hl=ko&gl=US"
               target="_blank"
             >
@@ -30,7 +30,7 @@ const experience_data = [
           <span>
             NFT 마켓플레이스 (
             <a
-              class="text-blue-600 hover:underline hover:underline-offset-4"
+              className="text-blue-600 hover:underline hover:underline-offset-4"
               href="https://creta.world/"
               target="_blank"
             >
@@ -44,7 +44,7 @@ const experience_data = [
         info: (
           <span>
             <a
-              class="text-blue-600 hover:underline hover:underline-offset-4"
+              className="text-blue-600 hover:underline hover:underline-offset-4"
               href="https://new.ssem.or.kr/"
               target="_blank"
             >

@@ -136,7 +136,7 @@ const project_data = [
   {
     id: 4,
     project_route: 'newSsem',
-    project_name: 'new SSEM',
+    project_name: 'New SSEM',
     project_period: '2021. 11 ~ 2022. 3',
     project_desc: '서울 비대면 온라인 교육플랫폼, 화상 수업 웹사이트',
     project_thum: NewSsemThum,

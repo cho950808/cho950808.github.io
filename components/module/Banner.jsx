@@ -25,7 +25,7 @@ const Banner = () => {
       <div className="z-1 absolute w-full h-full top-0 left-0 bg-gradient-to-t from-black/90 to-black/5" />
       <div className="z-10">
         <h1 className="text-1xl lg:text-5xl text-white px-10">
-          <span className="transition ease-out duration-200 cursor-default  ">
+          <span className="transition ease-out duration-200 cursor-default whitespace-pre-wrap lg:whitespace-normal">
             {text}
             <Cursor cursorColor="#F7AB0A" cursorStyle="|" />
           </span>
