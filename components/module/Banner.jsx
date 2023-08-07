@@ -33,7 +33,7 @@ const Banner = () => {
       </div>
       <div className="z-20 mt-5 flex items-center flex-col">
         <Link activeClass="active" to="aboutMe">
-          <button className="heroButton flex items-center">
+          <button className="theMoreButton flex items-center">
             더 알아보기
             <div className="arrow-icon">
               <BsArrowDownShort className="ml-1 h-6 w-6 lg:h-8 lg:w-8 z-20" />
