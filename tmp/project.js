@@ -154,10 +154,10 @@ const project_data = [
     ],
     project_tech: [
       {
-        tech: 'Spring framework',
+        tech: 'Spring Framework',
       },
       {
-        tech: 'Vue.jS',
+        tech: 'Vue.js',
       },
       {
         tech: 'JQuery',
@@ -191,10 +191,10 @@ const project_data = [
     ],
     project_tech: [
       {
-        tech: 'Spring framework',
+        tech: 'Spring Framework',
       },
       {
-        tech: 'Jquery',
+        tech: 'JQuery',
       },
       {
         tech: 'Oracle',
