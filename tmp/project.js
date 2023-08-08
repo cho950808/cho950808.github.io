@@ -80,10 +80,10 @@ const project_data = [
         tech: 'React Native',
       },
       {
-        tech: 'Styled-components',
+        tech: 'Recoil',
       },
       {
-        tech: 'Recoil',
+        tech: 'Styled-components',
       },
     ],
   },
@@ -120,16 +120,16 @@ const project_data = [
         tech: 'Next.js',
       },
       {
-        tech: 'Tailwind CSS',
-      },
-      {
         tech: 'Web3.js',
       },
       {
-        tech: 'Framer-motion',
+        tech: 'Redux',
       },
       {
-        tech: 'Redux',
+        tech: 'Tailwind CSS',
+      },
+      {
+        tech: 'Framer-motion',
       },
     ],
   },
@@ -148,6 +148,9 @@ const project_data = [
       {
         info: 'UI Framework 고도화',
       },
+      {
+        info: '공공SI 단계별 산출물 작성 (화면설계서, 기능명세서, 테이블정의서, 매뉴얼 등)',
+      },
     ],
     project_tech: [
       {
@@ -157,7 +160,7 @@ const project_data = [
         tech: 'Vue.jS',
       },
       {
-        tech: 'Jquery',
+        tech: 'JQuery',
       },
     ],
   },
