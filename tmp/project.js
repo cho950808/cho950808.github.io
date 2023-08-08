@@ -14,7 +14,7 @@ const project_data = [
     project_image: [],
     project_info: [
       {
-        info: '게임 퍼블리셔(게임을 판매와 유통하는 회사) 기능 요구 사항 도출 및 화면 설계',
+        info: '게임 퍼블리셔 기능 요구 사항 도출 및 화면 설계서 토대로 요구사항 확인',
       },
       {
         info: 'React.lazy를 활용해 필요한 컴포넌트만 로드할 수 있도록 코드 스플리팅 구현',
@@ -29,10 +29,10 @@ const project_data = [
         info: '메모이제이션(useCallback, useMemo)을 사용하여 불필요한 렌더링 방지 및 성능 향상',
       },
       {
-        info: 'Js(Javascript)에서 Ts(Typescript)로 마이그레이션',
+        info: 'Js(Javascript) -> Ts(Typescript)로 마이그레이션',
       },
       {
-        info: '개발 환경 구축 (QA, Dev, Prod) 및 GitLab 자동 배포 도입',
+        info: '개발 환경 구축 (QA, Dev, Prod)',
       },
     ],
     project_tech: [
@@ -40,13 +40,13 @@ const project_data = [
         tech: 'React',
       },
       {
-        tech: 'Tailwind CSS',
-      },
-      {
         tech: 'TypeScript',
       },
       {
         tech: 'Redux Toolkit',
+      },
+      {
+        tech: 'Tailwind CSS',
       },
     ],
   },
@@ -69,10 +69,13 @@ const project_data = [
         info: 'Recoil을 이용한 Glabal-State 관리',
       },
       {
-        info: '다국어(인도네시아, 영어, 한국어) 및 다크/화이트 모드 제공',
+        info: '다국어(인도네시아, 영어, 한국어) 및 테마 모드와 기능 구현',
       },
       {
         info: 'SNS 로그인 (페이스북, 구글) 구현',
+      },
+      {
+        info: 'FCM(Firebase Cloud Messaging)을 통해 모바일 푸시 알림을 구현',
       },
     ],
     project_tech: [
