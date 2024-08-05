@@ -1,6 +1,6 @@
 import PerfumeThum from '../public/assets/projects/perfume_thum.jpg'
 import NewSsemThum from '../public/assets/projects/new_ssem_thum.png'
-import Creta_Thum from '../public/assets/projects/creta_thum.jpg'
+import CretaThum from '../public/assets/projects/creta_thum.jpg'
 import StarLightThum from '../public/assets/projects/starlight_thum.jpg'
 
 const project_data = [
@@ -8,8 +8,8 @@ const project_data = [
     id: 1,
     project_route: 'darkSlayer',
     project_name: '다크 슬레이어(모바일 게임) - 운영, 통계 어드민 툴',
-    project_period: '2023. 6 ~ 현재',
-    project_desc: '다크 슬레이어:방치형 RPG(8월 말 소프트 런칭)',
+    project_period: '2023. 06 ~ 2023. 09',
+    project_desc: '다크 슬레이어 : 방치형 RPG',
     project_thum: StarLightThum,
     project_image: [],
     project_info: [
@@ -54,7 +54,7 @@ const project_data = [
     id: 2,
     project_route: 'starLight',
     project_name: 'StarLight',
-    project_period: '2022. 12 ~ 2023. 2',
+    project_period: '2022. 12 ~ 2023. 02',
     project_desc: 'K-POP 아티스트 또는 아이돌을 투표하여 리워드 보상을 해주는 서비스',
     project_thum: StarLightThum,
     project_image: [],
@@ -94,9 +94,9 @@ const project_data = [
     id: 3,
     project_route: 'creta',
     project_name: 'Creta',
-    project_period: '2022. 4 ~ 2022. 11',
+    project_period: '2022. 04 ~ 2022. 11',
     project_desc: 'MetaMask 지갑을 이용한 NFT 판매 웹사이트 (Polygon)',
-    project_thum: Creta_Thum,
+    project_thum: CretaThum,
     project_image: [],
     project_info: [
       {
@@ -140,7 +140,7 @@ const project_data = [
     id: 4,
     project_route: 'newSsem',
     project_name: 'New SSEM',
-    project_period: '2021. 11 ~ 2022. 3',
+    project_period: '2021. 11 ~ 2022. 03',
     project_desc: '서울 비대면 온라인 교육플랫폼, 화상 수업 웹사이트',
     project_thum: NewSsemThum,
     project_image: [],
@@ -164,43 +164,6 @@ const project_data = [
       },
       {
         tech: 'JQuery',
-      },
-    ],
-  },
-  {
-    id: 5,
-    project_route: 'perfumeShop',
-    project_name: 'Perfume Shop',
-    project_period: '2021. 6 ~ 2021. 8',
-    project_desc: '브랜드별 향수 쇼핑몰 웹사이트',
-    project_thum: PerfumeThum,
-    project_image: [],
-    project_info: [
-      {
-        info: '관리자 페이지 Bootstrap 적용',
-      },
-      {
-        info: '회원가입, 아이디/비밀번호 찾기 기능 구현',
-      },
-      {
-        info: 'Q&A, 상품 리스트 검색 기능 구현',
-      },
-      {
-        info: '전체 게시판 페이징 처리',
-      },
-      {
-        info: '카카오 지도 API 적용',
-      },
-    ],
-    project_tech: [
-      {
-        tech: 'Spring Framework',
-      },
-      {
-        tech: 'JQuery',
-      },
-      {
-        tech: 'Oracle',
       },
     ],
   },
