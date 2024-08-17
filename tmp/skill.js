@@ -17,14 +17,14 @@ const skill_data = [
     image_alt: 'JavaScript 이미지 입니다.',
   },
   {
+    framework: `TypeScript`,
+    skill_image: `${prefix}/assets/skills/typescript.png`,
+    image_alt: 'TypeScript 이미지 입니다.',
+  },
+  {
     framework: `React.js`,
     skill_image: `${prefix}/assets/skills/react.png`,
     image_alt: 'react 이미지 입니다.',
-  },
-  {
-    framework: `Next.js`,
-    skill_image: `${prefix}/assets/skills/nextjs.png`,
-    image_alt: 'Next.js 이미지 입니다.',
   },
   {
     framework: `React Native`,
@@ -32,25 +32,35 @@ const skill_data = [
     image_alt: 'React-native 이미지 입니다.',
   },
   {
-    framework: `Tailwind CSS`,
-    skill_image: `${prefix}/assets/skills/tailwind.png`,
-    image_alt: 'Tailwind CSS 이미지 입니다.',
+    framework: `Vue.js`,
+    skill_image: `${prefix}/assets/skills/vuejs.png`,
+    image_alt: 'vue 이미지 입니다.',
   },
   {
-    framework: `Styled-components`,
-    skill_image: `${prefix}/assets/skills/styled_components.png`,
-    image_alt: 'Styled-components 이미지 입니다.',
+    framework: `Next.js`,
+    skill_image: `${prefix}/assets/skills/nextjs.png`,
+    image_alt: 'Next.js 이미지 입니다.',
   },
-  {
-    framework: `Redux`,
-    skill_image: `${prefix}/assets/skills/redux.png`,
-    image_alt: 'Redux 이미지 입니다.',
-  },
-  {
-    framework: `Redux Toolkit`,
-    skill_image: `${prefix}/assets/skills/redux.png`,
-    image_alt: 'Redux Toolkit 이미지 입니다.',
-  },
+  // {
+  //   framework: `Tailwind CSS`,
+  //   skill_image: `${prefix}/assets/skills/tailwind.png`,
+  //   image_alt: 'Tailwind CSS 이미지 입니다.',
+  // },
+  // {
+  //   framework: `Styled-components`,
+  //   skill_image: `${prefix}/assets/skills/styled_components.png`,
+  //   image_alt: 'Styled-components 이미지 입니다.',
+  // },
+  // {
+  //   framework: `Redux`,
+  //   skill_image: `${prefix}/assets/skills/redux.png`,
+  //   image_alt: 'Redux 이미지 입니다.',
+  // },
+  // {
+  //   framework: `Redux Toolkit`,
+  //   skill_image: `${prefix}/assets/skills/redux.png`,
+  //   image_alt: 'Redux Toolkit 이미지 입니다.',
+  // },
 ]
 
 export default skill_data
