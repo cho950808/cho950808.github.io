@@ -1,4 +1,3 @@
-import PerfumeThum from '../public/assets/projects/perfume_thum.jpg'
 import NewSsemThum from '../public/assets/projects/new_ssem_thum.png'
 import CretaThum from '../public/assets/projects/creta_thum.jpg'
 import StarLightThum from '../public/assets/projects/starlight_thum.jpg'
@@ -10,8 +9,27 @@ const project_data = [
     project_name: '다크 슬레이어(모바일 게임) - 운영, 통계 어드민 툴',
     project_period: '2023. 06 ~ 2023. 09',
     project_desc: '다크 슬레이어 : 방치형 RPG',
+    // project_thum: StarLightThum,
+    // project_image: '../public/assets/projects/creta_thum.jpg',
+    project_info: [
+      {
+        info: '50개 이상의 기능 요구사항 도출 및 화면 설계서 기반 검증',
+      }
+    ],
+    project_tech: [
+      {
+        tech: 'Vue.js',
+      },
+    ],
+  },
+  {
+    id: 2,
+    project_route: 'darkSlayer',
+    project_name: '다크 슬레이어(모바일 게임) - 운영, 통계 어드민 툴',
+    project_period: '2023. 06 ~ 2023. 09',
+    project_desc: '다크 슬레이어 : 방치형 RPG',
     project_thum: StarLightThum,
-    project_image: [],
+    // project_image: '../public/assets/projects/creta_thum.jpg',
     project_info: [
       {
         info: '50개 이상의 기능 요구사항 도출 및 화면 설계서 기반 검증',
@@ -47,46 +65,6 @@ const project_data = [
       },
     ],
   },
-  // {
-  //   id: 2,
-  //   project_route: 'starLight',
-  //   project_name: 'StarLight',
-  //   project_period: '2022. 12 ~ 2023. 02',
-  //   project_desc: 'K-POP 아티스트 또는 아이돌을 투표하여 리워드 보상을 해주는 서비스',
-  //   project_thum: StarLightThum,
-  //   project_image: [],
-  //   project_info: [
-  //     {
-  //       info: 'Android, IOS 동시 개발 진행',
-  //     },
-  //     {
-  //       info: '피그마 UI 가이드를 통한 Styled-components로 전체 UI/UX 개발',
-  //     },
-  //     {
-  //       info: 'Recoil을 이용한 Glabal-State 관리',
-  //     },
-  //     {
-  //       info: '다국어(인도네시아, 영어, 한국어) 및 테마 모드와 기능 구현',
-  //     },
-  //     {
-  //       info: 'SNS 로그인 (페이스북, 구글) 구현',
-  //     },
-  //     {
-  //       info: 'FCM(Firebase Cloud Messaging)을 통해 모바일 푸시 알림을 구현',
-  //     },
-  //   ],
-  //   project_tech: [
-  //     {
-  //       tech: 'React Native',
-  //     },
-  //     {
-  //       tech: 'Recoil',
-  //     },
-  //     {
-  //       tech: 'Styled-components',
-  //     },
-  //   ],
-  // },
   {
     id: 3,
     project_route: 'creta',

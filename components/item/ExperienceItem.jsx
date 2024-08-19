@@ -2,7 +2,7 @@ import React from 'react'
 
 const ExperienceItem = ({ item }) => {
   return (
-    <div className={`w-full m-auto mb-[80px] lg:mb-[100px]'}`}>
+    <div className={`w-full h-full shadow-xl shadow-gray-300 rounded-xl p-7 m-auto mb-[20px] lg:mb-[30px]'}`}>
       <div>
         <p className="text-sm lg:text-tiny text-gray-500">{item.period_date}</p>
         <h2 className="flex items-center text-1xl lg:text-3xl font-bold text-gray-700">

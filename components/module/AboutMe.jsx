@@ -1,15 +1,16 @@
 import React from 'react'
 import Container from '../common/Container'
-import { prefix } from '../../config'
 import profile_data from '../../tmp/profile'
+import { prefix } from '../../config'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const AboutMe = () => {
   return (
     <Container scrollName="aboutMe" title="ABOUT ME">
       <article>
         <motion.div
-          className="w-full grid grid-cols-3 h-full shadow-xl shadow-gray-400 rounded-xl p-5"
+          className="w-full grid grid-cols-3 h-full shadow-xl shadow-gray-300 rounded-xl p-5"
           whileInView={{ x: 0, y: 15, scale: 1, rotate: 0, opacity: 1 }}
           initial={{ x: 0, y: 0, scale: 1, rotate: 0, opacity: 0 }}
           viewport={{ once: false }}
@@ -19,8 +20,10 @@ const AboutMe = () => {
             <div
               className={`flex items-center justify-center w-full max-h-[280px] lg:w-full lg:max-h-full rounded-lg overflow-hidden border-sky-10 border-2`}
             >
-              <img
+              <Image
                 src={`${prefix}/assets/projects/profile.jpeg`}
+                width={100}
+                height={100}
                 className="w-full h-full object-cover"
                 alt="프로필 이미지 입니다."
               />
@@ -65,7 +68,13 @@ const AboutMe = () => {
               </p>
             </div>
             <div className="items-center flex w-full justify-end h-full mt-3">
-              <img src={`${prefix}/assets/projects/sign.png`} className="w-[130px]  object-cover" alt="사인 입니다." />
+              <Image
+                src={`${prefix}/assets/projects/sign.png`}
+                width={100}
+                height={100}
+                className="w-[130px]  object-cover"
+                alt="사인 입니다."
+              />
             </div>
           </div>
         </motion.div>
