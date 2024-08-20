@@ -29,7 +29,7 @@ const TopScroll = () => {
     <div className="fixed bottom-5 right-5 lg:bottom-10 lg:right-10 z-30">
       {status && (
         <Link activeClass="active" to="home">
-          <button className="rounded-full shadow-lg bg-[#ecf0f1] shadow-gray-400 p-3 cursor-pointer hover:scale-125 ease-in duration-150">
+          <button className="rounded-full shadow-lg bg-[#ffffff] shadow-gray-400 p-3 cursor-pointer hover:scale-125 ease-in duration-150">
             <FaArrowUp className="h-5 w-5" />
           </button>
         </Link>

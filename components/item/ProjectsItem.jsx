@@ -23,7 +23,7 @@ const ProjectItem = ({ item }) => {
       <div className="col-span-3">
         <p className="text-base lg:text-[21px] font-bold text-gray-600/90 my-2 lg:my-3">{item.project_desc}</p>
         <div className="leading-4 lg:leading-5">
-          {item.project_info.map((els, index) => {
+          {item.project_info?.map((els, index) => {
             return (
               <div className="flex text-tiny lg:text-lg my-2 text-gray-500/75" key={`info_${index}`}>
                 - <span className="ml-1">{els.info}</span>
@@ -35,7 +35,7 @@ const ProjectItem = ({ item }) => {
       <div className="flex flex-col items-start justify-center w-full h-full col-span-1">
         <div className="text-lg mb-1 lg:mb-2 lg:text-1xl font-bold mt-6 lg:mt-0">Technologies</div>
         <div className="lg:leading-6">
-          {item.project_tech.map((el, index) => {
+          {item.project_tech?.map((el, index) => {
             return (
               <div className="flex text-tiny lg:text-lg text-gray-600/75" key={`tech_${index}`}>
                 - <span className="ml-1">{el.tech}</span>

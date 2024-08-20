@@ -1,8 +1,13 @@
-const experience_data = [
+import SmartScoreLogo from '../public/assets/company/smart-score.png'
+import StudioBreezeLogo from '../public/assets/company/studio-breeze.png'
+import WishMobileLogo from '../public/assets/company/wish-mobile.png'
+
+const career_data = [
   {
     id: 1,
-    company: '스마트스코어.',
-    period_date: '2023. 9 ~ 현재',
+    company: '스마트스코어',
+    company_logo: SmartScoreLogo,
+    period_date: '(2023. 9 ~ 재직)',
     work: [
       {
         info: '4개 이상의 골프 관련 앱 프로젝트에서 개발팀과 유기적으로 협력하여, 요구사항 구현부터 최종 릴리스까지 모든 단계를 성공적으로 완료',
@@ -18,8 +23,9 @@ const experience_data = [
   },
   {
     id: 2,
-    company: '스튜디오 브리즈.',
-    period_date: '2023. 06 ~ 2023. 09',
+    company: '스튜디오 브리즈',
+    company_logo: StudioBreezeLogo,
+    period_date: '(2023. 06 ~ 2023. 09)',
     work: [
       {
         info: '커스텀 통계툴 어드민 시스템을 설계하고 개발하여 실시간 데이터 분석과 운영 관리로 의사결정의 효율성과 정확성을 크게 향상',
@@ -32,8 +38,9 @@ const experience_data = [
   },
   {
     id: 3,
-    company: '위시모바일.',
-    period_date: '2021. 11 ~ 2023. 2',
+    company: '위시모바일',
+    company_logo: WishMobileLogo,
+    period_date: '(2021. 11 ~ 2023. 2)',
     work: [
       {
         info: (
@@ -83,4 +90,4 @@ const experience_data = [
   },
 ]
 
-export default experience_data
+export default career_data

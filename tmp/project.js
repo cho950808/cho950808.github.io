@@ -5,22 +5,6 @@ import StarLightThum from '../public/assets/projects/starlight_thum.jpg'
 const project_data = [
   {
     id: 1,
-    project_route: 'darkSlayer',
-    project_name: '다크 슬레이어(모바일 게임) - 운영, 통계 어드민 툴',
-    project_period: '2023. 06 ~ 2023. 09',
-    project_desc: '다크 슬레이어 : 방치형 RPG',
-    // project_thum: StarLightThum,
-    // project_image: '../public/assets/projects/creta_thum.jpg',
-    project_info: [
-      {
-        info: '50개 이상의 기능 요구사항 도출 및 화면 설계서 기반 검증',
-      }
-    ],
-    project_tech: [
-      {
-        tech: 'Vue.js',
-      },
-    ],
   },
   {
     id: 2,
