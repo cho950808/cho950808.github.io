@@ -12,6 +12,7 @@ const Career = () => {
         initial={{ x: 0, y: 0, scale: 1, rotate: 0, opacity: 0 }}
         viewport={{ once: false }}
         transition={{ duration: 1.0 }}
+        className="space-y-6"
       >
         {career_data.map((item, index) => {
           return <CareerItem item={item} key={`career_${index}`} />

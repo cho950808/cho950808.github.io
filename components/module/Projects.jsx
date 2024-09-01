@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import project from '../../tmp/project'
-import ProjectItem from '../item/ProjectsItem'
+// import project from '../../tmp/project'
+// import ProjectItem from '../item/ProjectsItem'
 import Container from '../common/Container'
 import { motion } from 'framer-motion'
 
 const Projects = () => {
-  const [info] = useState(project)
+  // const [info] = useState(project)
 
   return (
     <Container scrollName="projects" title="projects">
@@ -15,9 +15,9 @@ const Projects = () => {
         viewport={{ once: false }}
         transition={{ duration: 1.0 }}
       >
-        {info.map((item, index) => {
+        {/* {info.map((item, index) => {
           return <ProjectItem item={item} key={`project_${index}`} />
-        })}
+        })} */}
       </motion.div>
     </Container>
   )

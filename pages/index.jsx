@@ -14,9 +14,8 @@ export default function Home() {
       <main>
         <Banner />
         <AboutMe />
-        <Skills />
         <Career />
-        <Projects />
+        <Skills />
       </main>
       <TopScroll />
     </div>

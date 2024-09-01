@@ -65,14 +65,11 @@ const Header = () => {
               <Link activeClass="active" to="aboutMe">
                 <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">about</li>
               </Link>
-              <Link activeClass="active" to="skills">
-                <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">skills</li>
-              </Link>
               <Link activeClass="active" to="career">
                 <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">career</li>
               </Link>
-              <Link activeClass="active" to="projects">
-                <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">projects</li>
+              <Link activeClass="active" to="skills">
+                <li className="ml-10 text-sm uppercase hover:scale-105 cursor-pointer">skills</li>
               </Link>
             </ul>
             <div onClick={handleNav} className="md:hidden cursor-pointer px-2">

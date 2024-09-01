@@ -3,45 +3,40 @@ import Image from 'next/image'
 
 const ProjectItem = ({ item }) => {
   return (
-    <div className="w-full m-auto md:grid grid-cols-4 gap-5 mb-[40px] lg:mb-[40px] shadow-xl shadow-gray-300 rounded-xl p-7">
-      {/* <div className="col-span-4 mb-6">
-        <Image
-          src={item.project_thum}
-          alt={`${item.project_name} 이미지`}
-          width={1200}
-          height={600}
-          className="w-full h-auto object-cover rounded-lg"
-        />
-      </div> */}
-      <div className="col-span-4">
-        <p className="text-sm lg:text-tiny text-gray-500 leading-2 lg:leading-5">{item.project_period}</p>
-        <h2 className="flex items-center text-1xl lg:text-3xl font-bold text-gray-700 leading-6 lg:leading-7 mt-3">
+    <div className="w-full m-auto mb-[40px] lg:mb-[140px] lg:px-5">
+      {/* 프로젝트 이름 및 기간 */}
+      <div className="mb-5">
+        <h2 className="flex items-center text-1xl lg:text-2xl font-bold text-gray-700 leading-6 lg:leading-7">
           <div className="h-6 w-1.5 bg-blue-400 mr-2" />
           {item.project_name}
         </h2>
+        <p className="text-sm lg:text-tiny text-gray-500 leading-2 lg:leading-5 mt-3">- {item.project_period}</p>
       </div>
-      <div className="col-span-3">
-        <p className="text-base lg:text-[21px] font-bold text-gray-600/90 my-2 lg:my-3">{item.project_desc}</p>
+
+      {/* 프로젝트 설명 및 상세 정보 */}
+      <div className="mb-10">
+        <p className="text-base lg:text-[16px] font-bold text-gray-600/90 my-2 lg:my-3">{item.project_desc}</p>
         <div className="leading-4 lg:leading-5">
-          {item.project_info?.map((els, index) => {
-            return (
-              <div className="flex text-tiny lg:text-lg my-2 text-gray-500/75" key={`info_${index}`}>
-                - <span className="ml-1">{els.info}</span>
-              </div>
-            )
-          })}
+          {item.project_info?.map((els, index) => (
+            <div className="flex text-tiny lg:text-lg my-2 text-gray-500/75" key={`info_${index}`}>
+              - <span className="ml-1">{els.info}</span>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="flex flex-col items-start justify-center w-full h-full col-span-1">
-        <div className="text-lg mb-1 lg:mb-2 lg:text-1xl font-bold mt-6 lg:mt-0">Technologies</div>
-        <div className="lg:leading-6">
-          {item.project_tech?.map((el, index) => {
-            return (
-              <div className="flex text-tiny lg:text-lg text-gray-600/75" key={`tech_${index}`}>
-                - <span className="ml-1">{el.tech}</span>
-              </div>
-            )
-          })}
+
+      {/* 기술 스택 */}
+      <div className="mt-10">
+        <div className="text-lg mb-3 lg:text-1xl font-bold">Technologies</div>
+        <div className="flex flex-wrap gap-2">
+          {item.project_tech?.map((el, index) => (
+            <div
+              className="flex items-center justify-center px-4 py-2 text-tiny lg:text-lg text-gray-600/75 bg-blue-50 rounded-full"
+              key={`tech_${index}`}
+            >
+              {el.tech}
+            </div>
+          ))}
         </div>
       </div>
     </div>
