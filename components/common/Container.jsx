@@ -7,13 +7,17 @@ const Container = (props) => {
   return (
     <Element name={scrollName} className="max-w-[1280px] m-auto p-4 lg:p-0">
       <motion.div
-        className="max-w-[1280px] mx-auto py-[60px] lg:py-[95px] flex flex-col justify-center h-full"
-        whileInView={{ x: 0, y: 10, scale: 1, rotate: 0, opacity: 1 }}
-        initial={{ x: 0, y: 0, scale: 1, rotate: 0, opacity: 0 }}
-        viewport={{ once: false }}
+        className="max-w-[1280px] mx-auto py-[80px] lg:py-[120px] flex flex-col justify-center h-full"
+        whileInView={{ y: 0, scale: 1, rotate: 0, opacity: 1 }}
+        initial={{ y: -20, scale: 0.95, opacity: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <p className="uppercase text-lg lg:text-[25px] tracking-widest text-[#6fa2c7] font-bold lg:mb-3">{title}</p>
+        <div className="flex justify-center">
+          <p className="uppercase text-3xl lg:text-[40px] tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] font-extrabold mb-8 drop-shadow-lg text-center">
+            {title}
+          </p>
+        </div>
         {children}
       </motion.div>
     </Element>

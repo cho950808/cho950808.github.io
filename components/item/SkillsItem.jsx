@@ -13,18 +13,21 @@ const SkillsItem = (props) => {
         </h2>
       </div>
 
-      <div className="leading-5 lg:leading-7">
-        {item.skill_info?.map((els, index) => (
-          <div className="flex items-center text-tiny lg:text-base my-2 text-gray-700/75" key={`info_${index}`}>
-            - <span className="ml-1">{els.info}</span>
+      <div className="sm:flex sm:justify-start sm:items-start sm:space-x-2 grid grid-cols-6 gap-2 mb-5 bg-gradient-to-r from-slate-200 to-gray-200 p-4 rounded-lg shadow-lg">
+        {item.skill_icons?.map((icon, index) => (
+          <div
+            key={`icon_${index}`}
+            className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] p-3 rounded-full bg-white border-2 border-gray-300 shadow-md transition-all duration-300 ease-in-out"
+          >
+            <Image src={icon.src} alt={icon.alt} width={40} height={40} className="w-full h-full object-contain" />
           </div>
         ))}
       </div>
 
-      <div className="flex justify-start items-start space-x-2 mt-5">
-        {item.icons?.map((icon, index) => (
-          <div key={`icon_${index}`} className="p-2 rounded-full">
-            <Image src={icon.src} alt={icon.alt} width={40} height={40} />
+      <div className="leading-5 lg:leading-7">
+        {item.skill_info?.map((els, index) => (
+          <div className="flex items-center text-tiny lg:text-base my-2 text-gray-700/75" key={`info_${index}`}>
+            - <span className="ml-1">{els.info}</span>
           </div>
         ))}
       </div>

@@ -42,7 +42,7 @@ const Banner = () => {
         </Link>
       </div>
     </Element>
-  )
-}
+  );
+};
 
 export default Banner
