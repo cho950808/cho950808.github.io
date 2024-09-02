@@ -10,28 +10,28 @@ const career_data = [
     id: 1,
     company: '스마트스코어',
     company_logo: SmartScoreLogo,
-    period_date: '(2023. 9 ~ 재직)',
+    period_date: '(2023. 9 ~ 재직중)',
     work: [
       {
         project_route: 'myScore',
         project_name: 'MY스코어 신규 개발 (앱 5.0 버전 및 리뉴얼)',
         project_period: '2024. 03 ~ 2024. 09',
-        project_desc: 'MY골프백, MY골프장, MY배지 등 6개의 주요 서비스',
+        project_desc: '스코어 분석 기능을 구체화한 MY 골프 서비스',
         project_info: [
           {
-            info: 'MY 스코어 프로젝트에서 FSD 패턴 도입 및 프론트 개발 주도, 유지보수와 확장성 향상',
+            info: 'FSD 패턴 도입 및 프론트엔드 아키텍처 최적화로 개발 효율성 증대',
           },
           {
-            info: 'MY골프백, MY골프장, MY배지 등 6개의 주요 서비스 기능 구현으로 개인화된 사용자 경험 제공',
+            info: 'MY골프백, MY골프장, MY배지 등 6개의 핵심 서비스 기능 설계 및 구현',
           },
           {
-            info: '내부 관리자 페이지 설계 및 개발로 데이터와 사용자 관리 효율성 증대',
+            info: '내부 관리자 페이지 설계 및 개발로 데이터 관리와 사용자 관리 효율성 향상',
           },
           {
-            info: 'FSD 패턴 도입으로 코드 복잡성 감소, 기능 추가 속도 30% 향상 및 개발 프로세스 체계화',
+            info: 'FSD 패턴을 통한 코드 복잡성 감소와 기능 추가 속도 30% 향상',
           },
           {
-            info: '코드 가독성 향상 및 버그 발생률 감소로 안정성 강화',
+            info: '코드 가독성 개선과 버그 발생률 감소로 서비스 안정성 강화',
           },
         ],
         project_tech: [
@@ -42,7 +42,7 @@ const career_data = [
             tech: 'Vuex',
           },
           {
-            tech: 'Height Chart',
+            tech: 'Highcharts',
           },
         ],
       },
@@ -50,7 +50,7 @@ const career_data = [
         project_route: 'QBox',
         project_name: '큐박스 신규 개발 (앱 5.0 버전 및 리뉴얼)',
         project_period: '2024. 01 ~ 2024. 03',
-        project_desc: '다양한 서비스에서 각기 다른 광고 노출 서비스',
+        project_desc: '다양한 서비스에서 초개인화된 광고 추천 서비스',
         project_info: [
           {
             info: '큐박스 커스텀 광고 컴포넌트 개발, 다양한 서비스에서 효과적인 광고 노출 지원',
@@ -138,10 +138,19 @@ const career_data = [
         ],
         project_tech: [
           {
+            tech: 'Next.js',
+          },
+          {
+            tech: 'React',
+          },
+          {
             tech: 'Vue.js',
           },
           {
-            tech: 'Vuex',
+            tech: 'Turborepo',
+          },
+          {
+            tech: 'TypeScript',
           },
         ],
       },
@@ -156,9 +165,9 @@ const career_data = [
       {
         id: 1,
         project_route: 'darkSlayer',
-        project_name: '다크 슬레이어:방치형 RPG(모바일 게임) - 운영, 통계 어드민 툴',
+        project_name: '다크 슬레이어:방치형 RPG 어드민 툴 제작',
         project_period: '2023. 06 ~ 2023. 09',
-        project_desc: '다크 슬레이어 : 방치형 RPG',
+        project_desc: '액션 방치형 RPG 모바일 게임 운영, 통계 어드민',
         project_thum: StarLightThum,
         project_info: [
           {
@@ -210,22 +219,22 @@ const career_data = [
         project_desc: 'K-POP 아티스트 또는 아이돌을 투표하여 리워드 보상을 해주는 서비스',
         project_thum: StarLightThum,
         project_info: [
-            {
-              info: 'React Native를 활용한 Android/iOS 크로스플랫폼 개발 및 성능 최적화',
-            },
-            {
-              info: 'Figma UI 가이드 기반 Styled-components로 다크/화이트 모드 구현 및 스타일 관리',
-            },
-            {
-              info: '사용자 역할에 따른 접근 제한 기능 도입 및 Recoil로 Global-State 관리',
-            },
-            {
-              info: '인도네시아어, 영어, 한국어 지원으로 글로벌 사용자 요구 충족',
-            },
-            {
-              info: 'React Native 프로토타입 개발로 크로스플랫폼 동시 개발 가능성 검증 및 글로벌 사용자 경험 개선 기반 마련',
-            },
-          ],
+          {
+            info: 'React Native를 활용한 Android/iOS 크로스플랫폼 개발 및 성능 최적화',
+          },
+          {
+            info: 'Figma UI 가이드 기반 Styled-components로 다크/화이트 모드 구현 및 스타일 관리',
+          },
+          {
+            info: '사용자 역할에 따른 접근 제한 기능 도입 및 Recoil로 Global-State 관리',
+          },
+          {
+            info: '인도네시아어, 영어, 한국어 지원으로 글로벌 사용자 요구 충족',
+          },
+          {
+            info: 'React Native 프로토타입 개발로 크로스플랫폼 동시 개발 가능성 검증 및 글로벌 사용자 경험 개선 기반 마련',
+          },
+        ],
         project_tech: [
           {
             tech: 'React Native',

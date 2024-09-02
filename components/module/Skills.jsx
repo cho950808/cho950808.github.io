@@ -8,7 +8,6 @@ const Skills = () => {
   return (
     <Container scrollName="skills" title="skills">
       <motion.div
-        className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4"
         whileInView={{ x: 0, y: 15, scale: 1, rotate: 0, opacity: 1 }}
         initial={{ x: 0, y: 0, scale: 1, rotate: 0, opacity: 0 }}
         viewport={{ once: false }}
