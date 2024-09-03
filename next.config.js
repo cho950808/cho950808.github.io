@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: isProd ? '/' : '',
+  assetPrefix: isProd ? '/next-js-portfolio' : '',
 }
 
 module.exports = nextConfig
