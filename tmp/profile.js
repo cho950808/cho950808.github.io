@@ -15,6 +15,7 @@ const profile_data = [
       },
       {
         icon: <HiPhone className="w-4 h-4" />,
+        link: 'tel:010-4073-2899',
         text: '010-4073-2899',
       },
     ],
