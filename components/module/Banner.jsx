@@ -10,7 +10,7 @@ const Banner = () => {
   const [text] = useTypewriter({
     words,
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 3000,
     typeSpeed: 100,
   })
 

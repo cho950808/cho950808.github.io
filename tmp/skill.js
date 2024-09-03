@@ -33,28 +33,28 @@ const skill_data = [
       { src: `${prefix}/assets/skills/storybook.png`, alt: 'storybook' },
     ],
   },
-  {
-    skill_name: 'Backend Development',
-    skill_info: [
-      {
-        info: 'Express를 활용해 간단한 웹 서버와 RESTful API를 설계할 수 있는 기본적인 역량을 갖추고 있으며, 이를 더욱 발전시키기 위해 꾸준히 학습하고 있습니다.',
-      },
-      {
-        info: 'RESTful API 설계와 구현에 대한 기초적인 이해를 바탕으로, 더 복잡하고 확장 가능한 API 설계를 목표로 노력하고 있습니다.',
-      },
-      {
-        info: 'Firebase Authentication을 사용해 사용자 인증을 구현하고, 사용자 관리 및 권한 부여 시스템을 구축할 수 있습니다.',
-      },
-      {
-        info: 'MongoDB를 사용하여 간단한 CRUD 작업을 수행할 수 있습니다.',
-      },
-    ],
-    skill_icons: [
-      { src: `${prefix}/assets/skills/express.png`, alt: 'Express' },
-      { src: `${prefix}/assets/skills/firebase.png`, alt: 'Firebase' },
-      { src: `${prefix}/assets/skills/mongo.png`, alt: 'mongodb' },
-    ],
-  },
+  // {
+  //   skill_name: 'Backend Development',
+  //   skill_info: [
+  //     {
+  //       info: 'Express를 활용해 간단한 웹 서버와 RESTful API를 설계할 수 있는 기본적인 역량을 갖추고 있으며, 이를 더욱 발전시키기 위해 꾸준히 학습하고 있습니다.',
+  //     },
+  //     {
+  //       info: 'RESTful API 설계와 구현에 대한 기초적인 이해를 바탕으로, 더 복잡하고 확장 가능한 API 설계를 목표로 노력하고 있습니다.',
+  //     },
+  //     {
+  //       info: 'Firebase Authentication을 사용해 사용자 인증을 구현하고, 사용자 관리 및 권한 부여 시스템을 구축할 수 있습니다.',
+  //     },
+  //     {
+  //       info: 'MongoDB를 사용하여 간단한 CRUD 작업을 수행할 수 있습니다.',
+  //     },
+  //   ],
+  //   skill_icons: [
+  //     { src: `${prefix}/assets/skills/express.png`, alt: 'Express' },
+  //     { src: `${prefix}/assets/skills/firebase.png`, alt: 'Firebase' },
+  //     { src: `${prefix}/assets/skills/mongo.png`, alt: 'mongodb' },
+  //   ],
+  // },
   {
     skill_name: 'Workflow & Collaboration',
     skill_info: [

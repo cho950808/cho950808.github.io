@@ -4,6 +4,14 @@ module.exports = {
   mode: 'jit',
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './tmp/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      puradak: ['PuradakGentleGothicR', 'sans-serif'],
+      maruRegular: ['MaruBuri', 'sans-serif'],
+      maruSemiBold: ['MaruBuriSemiBold', 'sans-serif'],
+      maruBold: ['MaruBuriBold', 'sans-serif'],
+      maruLight: ['MaruBuriLight', 'sans-serif'],
+      maruExtraLight: ['MaruBuriExtraLight', 'sans-serif'],
+    },
     colors: {
       ...colors,
       primary: '#00C2FF',
