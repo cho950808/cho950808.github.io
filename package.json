@@ -2,7 +2,7 @@
   "name": "next-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cho950808.github.io/next-js-portfolio",
+  "homepage": "https://cho950808.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
