@@ -23,7 +23,7 @@ const skill_data = [
       },
     ],
     skill_icons: [
-      { src: `${prefix}/assets/skills/javaScript.png`, alt: 'JavaScript' },
+      { src: `${prefix}/assets/skills/javascript.png`, alt: 'JavaScript' },
       { src: `${prefix}/assets/skills/typescript.png`, alt: 'TypeScript' },
       { src: `${prefix}/assets/skills/react.png`, alt: 'React' },
       { src: `${prefix}/assets/skills/nextjs.png`, alt: 'Next.js' },
