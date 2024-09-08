@@ -10,6 +10,7 @@ const career_data = [
     id: 1,
     company: '스마트스코어',
     company_logo: SmartScoreLogo,
+    company_description: 'No.1 골프 포털 플랫폼으로 골프산업과 관련된 서비스를 제공하는 IT 플랫폼 기업',
     period_date: '(2023. 9 ~ 재직중)',
     work: [
       {
@@ -157,6 +158,7 @@ const career_data = [
     id: 2,
     company: '스튜디오 브리즈',
     company_logo: StudioBreezeLogo,
+    company_description: `'다크 슬레이어:방치형 RPG' 글로벌 출시 및 AOS 인기 1위를 달성하며, 다양한 게임을 제작 중인 모바일 게임 기업`,
     period_date: '(2023. 06 ~ 2023. 09)',
     work: [
       {
@@ -204,6 +206,8 @@ const career_data = [
     id: 3,
     company: '위시모바일',
     company_logo: WishMobileLogo,
+    company_description:
+      '50만 이상 다운로드를 기록한 글로벌 콘텐츠인 MeraPlay 플랫폼과 모바일·엔터테인먼트 서비스를 제공하는 IT 플랫폼 기업',
     period_date: '(2021. 11 ~ 2023. 02)',
     work: [
       {

@@ -23,6 +23,7 @@ module.exports = {
       light: '',
       dark: '',
       'black-rgba': 'rgba(17, 24, 39, 0.95)',
+      'red-rgba': 'rgba(170, 12, 12, 0.90)',
       'pink-rgba': 'rgba(255, 18, 92, 0.9)',
       'blue-rgba': 'rgba(56, 67, 168, 0.9)',
     },
