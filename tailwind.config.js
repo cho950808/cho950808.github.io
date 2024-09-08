@@ -24,6 +24,7 @@ module.exports = {
       dark: '',
       'black-rgba': 'rgba(17, 24, 39, 0.95)',
       'pink-rgba': 'rgba(255, 18, 92, 0.9)',
+      'blue-rgba': 'rgba(56, 67, 168, 0.9)',
     },
     screens: {
       xs: '501px',

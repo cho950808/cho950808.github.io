@@ -11,12 +11,12 @@ const profile_data = [
       {
         icon: <HiOutlineMail className="w-4 h-4" />,
         link: 'mailto:tjsthrl1111@gmail.com',
-        text: 'tjsthrl1111@gmail.com',
+        text: 'Email',
       },
       {
         icon: <HiPhone className="w-4 h-4" />,
         link: 'tel:010-4073-2899',
-        text: '010-4073-2899',
+        text: 'Phone',
       },
     ],
   },
@@ -26,12 +26,12 @@ const profile_data = [
       {
         icon: <TbNotebook className="w-4 h-4" />,
         link: 'https://chojy010.tistory.com/',
-        text: 'https://chojy010.tistory.com/',
+        text: 'Blog',
       },
       {
         icon: <AiFillGithub className="w-4 h-4" />,
         link: 'https://github.com/cho950808',
-        text: 'https://github.com/cho950808',
+        text: 'GitHub',
       },
     ],
   },

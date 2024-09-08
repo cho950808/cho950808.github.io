@@ -74,10 +74,15 @@ const AboutMe = () => {
                   item.info?.map((info, idx) => (
                     <div
                       key={`profile_info_${index}_${idx}`}
-                      className="w-[25px] h-[25px] lg:w-[50px] lg:h-[50px] p-3 rounded-full bg-white border-2 border-gray-300 shadow-md transition-all duration-300 ease-in-out flex items-center justify-center cursor-pointer hover:shadow-lg hover:bg-blue-50 hover:scale-105"
+                      className="relative group w-[25px] h-[25px] lg:w-[50px] lg:h-[50px] p-3 rounded-full bg-white border-2 border-gray-300 shadow-md transition-all duration-300 ease-in-out flex items-center justify-center cursor-pointer hover:shadow-lg hover:bg-blue-50 hover:scale-105"
                       onClick={() => handleIconClick(info)}
                     >
                       <p className="text-lg">{info.icon}</p>
+
+                      {/* Hover 시 노출될 텍스트 */}
+                      <span className="absolute bottom-full mb-2 hidden group-hover:block w-max bg-gray-800 text-white text-sm rounded-md px-2 py-1 transition-all duration-300">
+                        {info.text}
+                      </span>
                     </div>
                   ))
                 )}

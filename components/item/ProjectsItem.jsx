@@ -20,7 +20,7 @@ const ProjectItem = ({ item }) => {
 
       {/* 프로젝트 설명 및 상세 정보 */}
       <div className="mb-10">
-        <p className="text-base lg:text-[16px] font-bold text-pink-rgba my-2 lg:my-3">{item.project_desc}</p>
+        <p className="text-base lg:text-[16px] font-bold text-blue-rgba my-2 lg:my-3">{item.project_desc}</p>
         <div className="leading-4 lg:leading-5">
           {item.project_info?.map((els, index) => (
             <div className="flex text-sm lg:text-tiny my-2 text-gray-700/75" key={`info_${index}`}>
