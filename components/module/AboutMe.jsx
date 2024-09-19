@@ -37,7 +37,7 @@ const AboutMe = () => {
 
           <div className="flex flex-col col-span-3 lg:col-span-2 mt-3 lg:mt-0 lg:p-6">
             <div className="flex flex-col">
-              <h1 className="flex items-center font-bold text-lg lg:text-1xl text-gray-700">
+              <h1 className="flex items-center font-bold text-lg lg:text-1xl text-gray-700 mt-5">
                 <div className="h-4 lg:h-6 w-1.5 bg-blue-500 mr-2" />
                 Introduce
               </h1>
@@ -58,7 +58,7 @@ const AboutMe = () => {
               </p>
             </div>
 
-            <div className="flex flex-col items-center w-full justify-end h-full mt-3">
+            <div className="flex flex-col items-center w-full justify-end h-full mt-10 lg:mt-3">
               <div className="flex-shrink-0">
                 <Image
                   src={`${prefix}/assets/projects/sign.png`}

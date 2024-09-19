@@ -48,7 +48,7 @@ const Header = () => {
       <ScrollProgressBar />
       <div
         style={{ backgroundColor: navBg }}
-        className={`h-[60px] lg:h-20 fixed w-full z-[100] ${shadow ? 'shadow-xl' : ''}`}
+        className={`h-[60px] lg:h-20 fixed w-full z-[100] ${shadow ? 'shadow-lg' : ''}`}
       >
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
           <Link to="home">

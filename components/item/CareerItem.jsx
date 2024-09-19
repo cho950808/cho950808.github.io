@@ -47,17 +47,23 @@ const CareerItem = ({ item }) => {
   return (
     <div className="w-full h-full p-3 lg:p-5 mb-6">
       <div className="grid grid-cols-1 md:grid-cols-10 gap-6">
-        <div className="flex flex-col col-span-10 lg:col-span-2 justify-center md:justify-start top-5">
-          <div className="flex flex-col items-center md:items-center mb-4 md:mb-0">
-            <Image src={item.company_logo} width={100} height={100} alt="logo" className="mb-2" />
-            <div className="flex flex-col items-center md:items-center">
-              <h2 className="text-1xl lg:text-2xl font-bold text-gray-700 text-center md:text-left">{item.company}</h2>
-              <span className="text-sm lg:text-tiny text-gray-500 text-center md:text-left">{item.period_date}</span>
+        <div className="col-span-10 lg:col-span-2">
+          <div className="flex flex-col justify-center md:justify-start sticky top-20 z-10 bg-white">
+            <div className="flex flex-col items-center md:items-center mb-4 md:mb-0">
+              <Image src={item.company_logo} width={100} height={100} alt="logo" className="mb-2" />
+              <div className="flex flex-col items-center md:items-center">
+                <h2 className="text-1xl lg:text-2xl font-bold text-gray-700 text-center md:text-left">
+                  {item.company}
+                </h2>
+                <span className="text-sm lg:text-tiny text-gray-500 text-center md:text-left">{item.period_date}</span>
+              </div>
             </div>
-          </div>
 
-          <div className="mt-2 lg:mt-10 mb-5 lg:mb-0">
-            <p className="text-[12px] lg:text-sm text-gray-500 leading-5 lg:leading-6">{formattedDescription}</p>
+            <div className="mt-2 lg:mt-10 mb-5 lg:mb-0 bg-gray-100 p-4 lg:bg-transparent lg:p-0 lg:shadow-none rounded-lg shadow-sm">
+              <p className="text-[14px] lg:text-sm text-gray-700 leading-6">
+                {formattedDescription}
+              </p>
+            </div>
           </div>
         </div>
 
