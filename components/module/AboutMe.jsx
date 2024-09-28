@@ -67,10 +67,9 @@ const AboutMe = () => {
                 {`을 최우선으로 하여 직관적이고 매끄러운 인터페이스 구현에 주력하며, `}
                 <strong className="font-maruBold font-bold text-base lg:text-xl">완성도 높은 결과물</strong>
                 {`을 목표로 하고 있습니다.\n\n`}
-                {`그 외 지속적으로 `}
-                <strong className="font-maruBold font-bold text-base lg:text-xl">스터디와 학습</strong>
-                {`를 통해 최신 기술 트렌드를 익히고, 이를 실제 프로젝트에 적용하며 발전하고 있습니다. `}
-                {`또한, 이러한 지식을 팀원들과 공유하여 함께 성장하는 문화를 만들어가고 있습니다.`}
+                {`더불어, 스터디를 통해 최신 기술 트렌드를 같이 학습하고, 이를 실제 프로젝트에 적용하여 발전을 추구합니다. 이러한 지식을 `}
+                <strong className="font-maruBold font-bold text-base lg:text-xl">팀원들과 함께 공유</strong>
+                {`하여 협업 문화를 만들어 나가고 있습니다.`}
               </p>
             </div>
 
