@@ -2,8 +2,6 @@ import { AiFillGithub } from 'react-icons/ai'
 import { TbNotebook } from 'react-icons/tb'
 import { HiOutlineMail, HiPhone } from 'react-icons/hi'
 
-export const words = [`3년차 프론트엔드 개발자\n조재영 입니다.`]
-
 const profile_data = [
   {
     title: 'Contact',

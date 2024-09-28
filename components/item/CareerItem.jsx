@@ -50,7 +50,7 @@ const CareerItem = ({ item }) => {
         <div className="col-span-10 lg:col-span-2">
           <div className="flex flex-col justify-center md:justify-start sticky top-20 z-10 bg-white">
             <div className="flex flex-col items-center md:items-center mb-4 md:mb-0">
-              <Image src={item.company_logo} width={100} height={100} alt="logo" className="mb-2" />
+              <Image src={item.company_logo} width={100} height={`auto`} alt="logo" className="mb-2" />
               <div className="flex flex-col items-center md:items-center">
                 <h2 className="text-1xl lg:text-2xl font-bold text-gray-700 text-center md:text-left">
                   {item.company}
