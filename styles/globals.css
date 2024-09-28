@@ -57,6 +57,7 @@ html {
 
 @layer base {
   body {
+    overflow : hidden;
     font-family: 'PuradakGentleGothicR', sans-serif;
     font-size: 13px;
     @apply bg-[#ffffff] text-[#1f2937] tracking-wide;
