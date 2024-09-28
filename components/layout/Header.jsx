@@ -1,17 +1,16 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { Link } from 'react-scroll'
-import { AiOutlineClose, AiOutlineMenu, AiFillGithub, AiOutlineMail } from 'react-icons/ai'
-import { SiNotion } from 'react-icons/si'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { isMobile } from 'react-device-detect'
 import ScrollProgressBar from '../common/ScrollProgressBar'
+import profile_data from '../../tmp/profile'
 
 const Header = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
-  const [navBg, setNavBg] = useState('transparent')
   const [linkColor, setLinkColor] = useState('#ffffff')
   const [activeLink, setActiveLink] = useState('')
-
+  const [navBg, setNavBg] = useState('transparent')
   const toggleNav = () => setNav(!nav)
 
   const handleShadow = useCallback(() => {
@@ -43,11 +42,18 @@ const Header = () => {
     }
   }
 
+  const handleIconClick = (info) => {
+    window.open(info.link, '_blank', 'noopener,noreferrer')
+  }
+
   return (
     <>
       <ScrollProgressBar />
       <div
-        style={{ backgroundColor: navBg }}
+        style={{
+          backgroundColor: navBg,
+          transition: 'background-color 0.5s ease, opacity 0.6s ease',
+        }}
         className={`h-[60px] lg:h-20 fixed w-full z-[100] ${shadow ? 'shadow-lg' : ''}`}
       >
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -99,10 +105,10 @@ const Header = () => {
                 : 'fixed right-[-100%] top-0 p-10 ease duration-500'
             }
           >
-            <div className="flex w-full items-center justify-between">
+            <div className="flex w-full items-center justify-end">
               <div
                 onClick={toggleNav}
-                className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-125 ease-in duration-150"
+                className="ml-auto rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-125 ease-in duration-150"
               >
                 <AiOutlineClose />
               </div>
@@ -121,24 +127,24 @@ const Header = () => {
                   </Link>
                 ))}
               </ul>
-              <div className="pt-40">
+
+              <div className="mt-40">
                 <p className="uppercase tracking-widest text-[#6fa2c7]">Connect</p>
-                <div className="flex items-center justify-between w-full my-4 sm:w-[80%]">
-                  <a href="" target="_blank" rel="noreferrer">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-125 ease-in duration-150">
-                      <SiNotion />
-                    </div>
-                  </a>
-                  <a href="" target="_blank" rel="noreferrer">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-125 ease-in duration-150">
-                      <AiFillGithub />
-                    </div>
-                  </a>
-                  <a href="">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-125 ease-in duration-150">
-                      <AiOutlineMail />
-                    </div>
-                  </a>
+                <div className="flex flex-wrap gap-3 mt-4">
+                  {profile_data.map((item, index) =>
+                    item.info?.map((info, idx) => (
+                      <div
+                        key={`profile_info_${index}_${idx}`}
+                        className="relative group w-[25px] h-[25px] lg:w-[50px] lg:h-[50px] p-5 rounded-full bg-white border-2 border-gray-300 shadow-md transition-all duration-300 ease-in-out flex items-center justify-center cursor-pointer hover:shadow-lg hover:bg-blue-50 hover:scale-105"
+                        onClick={() => handleIconClick(info)}
+                      >
+                        <p className="text-lg">{info.icon}</p>
+                        <span className="absolute bottom-full mb-2 hidden group-hover:block w-max bg-gray-800 text-white text-sm rounded-md px-2 py-1 transition-all duration-300">
+                          {info.text}
+                        </span>
+                      </div>
+                    ))
+                  )}
                 </div>
               </div>
             </div>

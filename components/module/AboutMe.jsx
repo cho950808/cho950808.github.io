@@ -84,12 +84,12 @@ const AboutMe = () => {
                 />
               </div>
 
-              <div className="flex flex-wrap gap-4 mt-1 lg:mt-2">
+              <div className="flex flex-wrap gap-3 mt-4">
                 {profile_data.map((item, index) =>
                   item.info?.map((info, idx) => (
                     <div
                       key={`profile_info_${index}_${idx}`}
-                      className="relative group w-[25px] h-[25px] lg:w-[50px] lg:h-[50px] p-3 rounded-full bg-white border-2 border-gray-300 shadow-md transition-all duration-300 ease-in-out flex items-center justify-center cursor-pointer hover:shadow-lg hover:bg-blue-50 hover:scale-105"
+                      className="relative group w-[25px] h-[25px] lg:w-[50px] lg:h-[50px] p-5 rounded-full bg-white border-2 border-gray-300 shadow-md transition-all duration-300 ease-in-out flex items-center justify-center cursor-pointer hover:shadow-lg hover:bg-blue-50 hover:scale-105"
                       onClick={() => handleIconClick(info)}
                     >
                       <p className="text-lg">{info.icon}</p>
