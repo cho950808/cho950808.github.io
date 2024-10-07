@@ -11,7 +11,7 @@ const career_data = [
     company: '스마트스코어',
     company_logo: SmartScoreLogo,
     company_description: 'No.1 골프 포털 플랫폼으로 골프산업과 관련된 서비스를 제공하는 IT 플랫폼 기업',
-    period_date: '(2023. 9 ~ 재직중)',
+    period_date: '(2023. 09 ~ 2024. 09)',
     work: [
       {
         project_route: 'myScore',
@@ -285,9 +285,6 @@ const career_data = [
         project_info: [
           {
             info: 'QA 테스트를 통해 50건 이상의 이슈를 해결하고, 송출 전 안정화 작업으로 버그 발생률 감소',
-          },
-          {
-            info: 'UI Framework 고도화 작업을 통해 렌더링 속도, 코드 유지보수성 25% 증가',
           },
           {
             info: '30개 이상의 산출물(화면설계서, 기능명세서, 테이블정의서, 매뉴얼 등)을 작성하여, 프로젝트 일정 내 100% 제출 완료',
