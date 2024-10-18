@@ -150,7 +150,6 @@ const career_data = [
         project_name: '다크 슬레이어:방치형 RPG 어드민 툴 제작',
         project_period: '2023. 06 ~ 2023. 09',
         project_desc: '액션 방치형 RPG 모바일 게임 운영, 통계 어드민',
-        project_thum: StarLightThum,
         project_info: [
           {
             info: '50개 이상의 기능 요구사항 도출 및 화면 설계서 기반 검증',
