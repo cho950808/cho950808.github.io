@@ -1,15 +1,10 @@
-import SmartScoreLogo from '../public/assets/company/smart-score.png'
-import StudioBreezeLogo from '../public/assets/company/studio-breeze.png'
-import WishMobileLogo from '../public/assets/company/wish-mobile.png'
-import NewSsemThum from '../public/assets/projects/new_ssem_thum.png'
-import CretaThum from '../public/assets/projects/creta_thum.jpg'
-import StarLightThum from '../public/assets/projects/starlight_thum.jpg'
+import { prefix } from '../config'
 
 const career_data = [
   {
     id: 1,
     company: '스마트스코어',
-    company_logo: SmartScoreLogo,
+    company_logo: `${prefix}/assets/company/smart-score.png`,
     company_description: 'No.1 골프 포털 플랫폼으로 골프산업과 관련된 서비스를 제공하는 IT 플랫폼 기업',
     period_date: '(2023. 09 ~ 2024. 09)',
     work: [
@@ -145,7 +140,7 @@ const career_data = [
   {
     id: 2,
     company: '스튜디오 브리즈',
-    company_logo: StudioBreezeLogo,
+    company_logo: `${prefix}/assets/company/studio-breeze.png`,
     company_description: `'다크 슬레이어:방치형 RPG' 글로벌 출시 및 AOS 인기 1위를 달성하며, 다양한 게임을 제작 중인 모바일 게임 기업`,
     period_date: '(2023. 06 ~ 2023. 09)',
     work: [
@@ -193,7 +188,7 @@ const career_data = [
   {
     id: 3,
     company: '위시모바일',
-    company_logo: WishMobileLogo,
+    company_logo: `${prefix}/assets/company/wish-mobile.png`,
     company_description:
       '50만 이상 다운로드를 기록한 글로벌 콘텐츠인 MeraPlay 플랫폼과 모바일·엔터테인먼트 서비스를 제공하는 IT 플랫폼 기업',
     period_date: '(2021. 11 ~ 2023. 02)',
@@ -203,7 +198,6 @@ const career_data = [
         project_name: 'StarLight',
         project_period: '2022. 12 ~ 2023. 02',
         project_desc: 'K-POP 아티스트 또는 아이돌을 투표하여 리워드 보상을 해주는 서비스',
-        project_thum: StarLightThum,
         project_info: [
           {
             info: 'React Native를 활용한 Android/iOS 크로스플랫폼 개발 및 성능 최적화',
@@ -238,7 +232,6 @@ const career_data = [
         project_name: 'Creta (NFT 마켓 플레이스)',
         project_period: '2022. 04 ~ 2022. 11',
         project_desc: 'MetaMask 지갑을 이용한 NFT 판매 웹사이트 (Polygon)',
-        project_thum: CretaThum,
         project_info: [
           {
             info: 'Go로 개발된 백엔드 프로토콜과 연동되는 프론트엔드 클라이언트 구축',
@@ -280,7 +273,6 @@ const career_data = [
         project_name: 'New SSEM',
         project_period: '2021. 11 ~ 2022. 03',
         project_desc: '서울 비대면 온라인 교육플랫폼, 화상 수업 웹사이트',
-        project_thum: NewSsemThum,
         project_image: [],
         project_info: [
           {
