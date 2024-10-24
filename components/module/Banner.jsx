@@ -39,48 +39,17 @@ const Banner = () => {
     }
   }, [isLoadingComplete])
 
-    useEffect(() => {
-      let lastScrollTop = 0
-      let ticking = false
-
-      const handleScroll = () => {
-        const scrollY = window.scrollY
-
-        if (!ticking) {
-          window.requestAnimationFrame(() => {
-            if (Math.abs(scrollY - lastScrollTop) > 5) {
-              setBackgroundPosition(`center ${scrollY * 0.3}px`)
-              lastScrollTop = scrollY
-            }
-            ticking = false
-          })
-          ticking = true
-        }
-      }
-
-      window.addEventListener('scroll', handleScroll)
-
-      return () => {
-        window.removeEventListener('scroll', handleScroll)
-      }
-    }, [])
-  
-  const bannerStyle = useMemo(
-    () => ({
-      backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('${prefix}/assets/projects/banner.jpeg')`,
-      backgroundBlendMode: 'overlay',
-      backgroundSize: 'cover',
-      backgroundPosition: backgroundPosition,
-      animation: 'infinite alternate',
-    }),
-    [backgroundPosition]
-  )
-
   return (
     <Element
       name="home"
       className="flex flex-col items-center justify-center w-full h-[500px] lg:h-screen text-center bg-cover bg-center relative overflow-hidden"
-      style={bannerStyle}
+      style={{
+        backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('${prefix}/assets/projects/banner.jpeg')`,
+        backgroundBlendMode: 'overlay',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        animation: 'backgroundZoom 8s infinite alternate',
+      }}
     >
       <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-10 animate-shimmer" />
       <div className="absolute w-full h-full top-0 left-0 bg-black opacity-40" />

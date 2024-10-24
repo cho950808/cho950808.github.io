@@ -15,16 +15,16 @@ const career_data = [
         project_desc: '스코어 분석 기능을 구체화한 MY 골프 서비스',
         project_info: [
           {
-            info: 'MY골프백, MY골프장, MY배지 등 6개의 핵심 서비스 기능 설계 및 구현',
+            info: 'FSD 패턴을 도입, 기능 추가 속도 향상',
           },
           {
-            info: 'FSD 패턴 도입을 통해 코드 복잡성을 감소시키고, 기능 추가 속도를 30% 향상시켜 팀 간 협업 효율성을 크게 개선',
+            info: 'MY 서비스 내부 관리자 페이지 설계 및 개발 개선',
           },
           {
-            info: 'MY 서비스 내부 관리자 페이지 설계 및 개발로 데이터 관리와 사용자 관리 효율성 향상',
+            info: '새로운 팀원도 쉽게 이해하고 협업을 위한 일관된 코드 스타일 가이드로 코드 일관성을 유지 및 향상',
           },
           {
-            info: '변수 및 함수 네이밍 규칙과 코드 형식에 일관된 스타일 가이드를 적용하여 가독성 개선',
+            info: 'Highcharts, Chart.js를 활용해 데이터 시각화',
           },
         ],
         project_tech: [
@@ -43,19 +43,16 @@ const career_data = [
         project_route: 'QBox',
         project_name: '큐박스 신규 개발 (앱 5.0 버전 및 리뉴얼)',
         project_period: '2024. 01 ~ 2024. 03',
-        project_desc: '다양한 서비스에서 초개인화된 광고 추천 서비스',
+        project_desc: '다양한 서비스에서 개인화된 광고 추천 서비스',
         project_info: [
           {
-            info: '커스텀 광고 공통 컴포넌트 개발, 20개 이상의 다양한 서비스에서 효과적인 광고 노출 지원',
+            info: '20개 이상의 서비스 개인 광고를 노출하기 위한 공통 컴포넌트 개발',
           },
           {
-            info: '개발 적용 가이드를 상세히 작성하여, 추가 교육 없이도 효과적으로 컴포넌트를 활용할 수 있도록 지원',
+            info: '공통 컴포넌트 개발 적용 가이드 제공, 추가 교육 없이도 컴포넌트를 활용할 수 있도록 지원',
           },
           {
-            info: '내부 관리자 페이지에서 커스터마이징 기능 설계 및 개발, 광고 요구 사항 대응 강화',
-          },
-          {
-            info: '각 서비스에 큐박스 공통 컴포넌트를 적용한 결과, 광고 개인화로 클릭률 18% 증가',
+            info: '내부 관리자 페이지에서 커스터마이징 기능 설계 및 개발',
           },
         ],
         project_tech: [
@@ -74,10 +71,7 @@ const career_data = [
         project_desc: '실시간 스트리밍 서비스',
         project_info: [
           {
-            info: 'Vue WebView 프로젝트에 라이브커머스 솔루션 통합 및 API 연동, UI 개선 주도',
-          },
-          {
-            info: '실시간 스트리밍 최적화로 원활한 라이브커머스 경험 제공',
+            info: 'Vue WebView 프로젝트에 실시간 스트리밍 라이브커머스 솔루션 통합',
           },
           {
             info: '도입 과정 문서화로 유지보수 및 확장',
@@ -102,19 +96,13 @@ const career_data = [
         project_desc: '',
         project_info: [
           {
-            info: '마이크로 프론트엔드 POC 도입 및 문서화, 340만 줄 이상의 JavaScript 코드와 4,300개 Vue 파일 분석',
+            info: '340만 줄 이상의 JavaScript 코드와 4,300개의 Vue 파일 분석, POC 도입',
           },
           {
-            info: '모놀리식 아키텍처와의 차이점 정의 및 기술 문서화',
+            info: '모놀리식 아키텍처와의 차이점 문서화 작업, 팀 내 기술 공유를 통해 기술 이해도 향상',
           },
           {
-            info: '팀 내 기술 이해도 향상을 위한 설계 및 개발 코드 공유',
-          },
-          {
-            info: 'POC 버전 도입 및 GitLab에 폴더 구조와 기술 레포지토리 배포',
-          },
-          {
-            info: '사내 프론트엔드 개발자들의 기술 이해도 및 관심 유도',
+            info: '사내 GitLab 기술 레포지토리 배포, 프론트엔드 개발자들의 관심과 이해 유도',
           },
         ],
         project_tech: [
@@ -152,19 +140,19 @@ const career_data = [
         project_desc: '액션 방치형 RPG 모바일 게임 운영, 통계 어드민',
         project_info: [
           {
-            info: '50개 이상의 기능 요구사항 도출 및 화면 설계서 기반 검증',
+            info: '화면 설계서 기반으로 50개 이상의 기능 요구사항 도출',
           },
           {
-            info: '사용자 역할에 따른 페이지 접근 제한 기능 구현으로 보안 수준 향상',
+            info: '초기 JavaScript로 빠르게 개발 시작, 추후 TypeScript로 마이그레이션',
           },
           {
-            info: '메모이제이션(useCallback, useMemo)을 사용하여 불필요한 렌더링을 줄여 성능 15% 개선',
+            info: '사용자 역할에 따른 페이지 접근 제한 기능 추가',
           },
           {
-            info: '초기 JavaScript로 빠르게 개발 시작, 프로젝트 요구사항 변화에 따라 중반부에 TypeScript로 성공적으로 전환하여 안정성과 유지보수성을 확보',
+            info: '메모이제이션(useCallback, useMemo)을 사용하여 불필요한 렌더링 개선',
           },
           {
-            info: 'QA, Dev, Prod 환경을 체계적으로 구축하여 각 환경에서의 배포와 테스트 과정을 원활하게 수행',
+            info: 'Jenkins를 사용하여 CI/CD 파이프라인 구축 (QA, DEV, PROD 환경 자동화 배포)',
           },
         ],
         project_tech: [
@@ -194,24 +182,24 @@ const career_data = [
     work: [
       {
         project_route: 'starLight',
-        project_name: 'StarLight',
+        project_name: 'StarLight (ProtoType)',
         project_period: '2022. 12 ~ 2023. 02',
         project_desc: 'K-POP 아티스트 또는 아이돌을 투표하여 리워드 보상을 해주는 서비스',
         project_info: [
           {
-            info: 'React Native를 활용한 Android/iOS 크로스플랫폼 개발 및 성능 최적화',
+            info: 'React Native를 사용해 Android/iOS 크로스플랫폼 동시 개발',
           },
           {
-            info: 'Figma UI 가이드 기반 Styled-components로 다크/화이트 모드 구현 및 스타일 관리',
+            info: 'WebSocket을 사용하여 자동으로 업데이트되는 투표 결과 화면 실시간 제공',
           },
           {
-            info: '사용자 역할에 따른 접근 제한 기능 도입 및 Recoil로 Global-State 관리',
+            info: '다국어 (인도네시아어, 영어, 한국어), 다크/화이트 모드 제공',
           },
           {
-            info: '인도네시아어, 영어, 한국어 지원으로 글로벌 사용자 요구 충족',
+            info: 'Recoil을 사용해 Global-State를 관리하며 역할에 따른 접근 제한 기능 제공',
           },
           {
-            info: 'React Native 프로토타입 개발로 크로스플랫폼 동시 개발 가능성 검증 및 글로벌 사용자 경험 개선 기반 마련',
+            info: 'Styled Components를 활용한 컴포넌트 기반의 재사용 가능한 스타일링 구현',
           },
         ],
         project_tech: [
@@ -233,19 +221,16 @@ const career_data = [
         project_desc: 'MetaMask 지갑을 이용한 NFT 판매 웹사이트 (Polygon)',
         project_info: [
           {
-            info: 'Go로 개발된 백엔드 프로토콜과 연동되는 프론트엔드 클라이언트 구축',
+            info: 'Tailwind를 활용한 UI 구현 및 Next.js, Web3.js를 이용한 MetaMask 연동으로 NFT 판매 웹사이트 구축',
           },
           {
-            info: '사용자 경험 최적화를 위한 UI/UX 개선 작업',
+            info: 'Go로 개발된 백엔드 프로토콜과 RESTful API을 통해 통신하는 프론트엔드 클라이언트 구현',
           },
           {
-            info: 'Redux로 상태 관리 최적화, 코드 복잡도 감소 및 시간 20% 절감',
+            info: 'Redux를 활용해 전역 상태 관리를 최적화하고 코드 복잡도를 개선하여 성능 향상',
           },
           {
-            info: '케이스별 가스비 최적화로 15% 절감 및 오류 발생률 감소',
-          },
-          {
-            info: '주간 배포 버그를 24시간 내 해결, 운영 효율성 20% 향상',
+            info: '다양한 민팅 테스트 케이스를 통해 가스비 최적화 가격 책정, 비용 절감 효과 달성',
           },
         ],
         project_tech: [
@@ -275,10 +260,13 @@ const career_data = [
         project_image: [],
         project_info: [
           {
-            info: 'QA 테스트를 통해 50건 이상의 이슈를 해결하고, 송출 전 안정화 작업으로 버그 발생률 감소',
+            info: '라이프사이클 훅(mounted, created)을 활용해 동적 데이터 로딩 및 UI 업데이트 구현',
           },
           {
-            info: '30개 이상의 산출물(화면설계서, 기능명세서, 테이블정의서, 매뉴얼 등)을 작성하여, 프로젝트 일정 내 100% 제출 완료',
+            info: '컴포넌트 재사용성을 높여 코드 유지보수성 강화',
+          },
+          {
+            info: 'Axios와 Vuex를 활용해 API 통신 로직 최적화로 네트워크 요청 감소 및 성능 개선',
           },
         ],
         project_tech: [
