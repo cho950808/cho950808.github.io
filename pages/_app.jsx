@@ -3,6 +3,7 @@ import Router from 'next/router'
 import Layout from '../components/layout/Layout'
 import '../styles/globals.css'
 import LoadingScreen from '../components/common/LoadingScreen'
+import CommonModal from '../components/module/CareerDetailModal'
 
 const MyApp = ({ Component, pageProps }) => {
   const [loading, setLoading] = useState(true)
@@ -41,6 +42,7 @@ const MyApp = ({ Component, pageProps }) => {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <CommonModal />
     </>
   )
 }

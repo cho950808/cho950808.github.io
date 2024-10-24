@@ -13,7 +13,7 @@ const SkillsItem = (props) => {
         </h2>
       </div>
 
-      <div className="sm:flex sm:justify-start sm:items-start sm:space-x-2 grid grid-cols-6 gap-2 mb-5 bg-gradient-to-r from-slate-200 to-gray-200 p-4 rounded-lg shadow-lg">
+      <div className="sm:flex sm:justify-start sm:items-start sm:space-x-2 grid grid-cols-6 gap-2 mb-5 bg-gradient-to-r from-gray-100/80 to-gray-200/80 p-4 rounded-lg shadow-lg">
         {item.skill_icons?.map((icon, index) => (
           <div
             key={`icon_${index}`}
@@ -24,10 +24,10 @@ const SkillsItem = (props) => {
         ))}
       </div>
 
-      <div className="leading-5 lg:leading-7">
+      <div className="leading-5 lg:leading-8 mt-3 lg:mt-10">
         {item.skill_info?.map((els, index) => (
-          <div className="flex items-center text-tiny lg:text-base my-2 text-gray-700/75" key={`info_${index}`}>
-            - <span className="ml-1">{els.info}</span>
+          <div className="flex items-center text-tiny lg:text-lg my-2 text-gray-700/75" key={`info_${index}`}>
+            • <span className="ml-1">{els.info}</span>
           </div>
         ))}
       </div>
