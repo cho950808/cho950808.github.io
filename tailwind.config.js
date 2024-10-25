@@ -47,7 +47,18 @@ module.exports = {
       '4xl': ['40px'],
       '5xl': ['52px'],
     },
-    extend: {},
+    extend: {
+      animation: {
+        parallaxZoom: 'parallaxZoom 40s infinite alternate ease-in-out',
+      },
+      keyframes: {
+        parallaxZoom: {
+          '0%': { transform: 'scale(1) translateY(0)' },
+          '50%': { transform: 'scale(1.05) translateY(-10px)' },
+          '100%': { transform: 'scale(1.1) translateY(-20px)' },
+        },
+      },
+    },
   },
   plugins: [],
 }

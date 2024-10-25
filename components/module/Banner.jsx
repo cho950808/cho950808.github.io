@@ -8,8 +8,6 @@ const Banner = () => {
   const [isLoadingComplete, setIsLoadingComplete] = useState(false)
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
   const [fadeClass, setFadeClass] = useState('')
-  const [backgroundPosition, setBackgroundPosition] = useState('center')
-
 
   const texts = [
     `효율적이고 유지보수 가능한 코드를 지향합니다.`,
@@ -42,13 +40,13 @@ const Banner = () => {
   return (
     <Element
       name="home"
-      className="flex flex-col items-center justify-center w-full h-[500px] lg:h-screen text-center bg-cover bg-center relative overflow-hidden"
+      className="flex flex-col items-center justify-center w-full h-[500px] lg:h-screen text-center relative overflow-hidden bg-cover bg-center animate-parallaxZoom"
       style={{
         backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('${prefix}/assets/projects/banner.jpeg')`,
-        backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        animation: 'backgroundZoom 8s infinite alternate',
+        transformOrigin: 'center',
       }}
     >
       <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-10 animate-shimmer" />
